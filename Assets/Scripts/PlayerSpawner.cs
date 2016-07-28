@@ -28,7 +28,8 @@ public class PlayerSpawner : MonoBehaviour
 		gameOverText.text = "";
 		score = 0;
 		UpdateScore();
-		livesText = GameObject.Find ("livesText").GetComponent<GUIText>();
+		//Duke : I want to delete this line of code
+//		livesText = GameObject.Find ("livesText").GetComponent<GUIText>();
 		SpawnPlayer();
 		
 	}

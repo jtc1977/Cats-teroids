@@ -67,13 +67,15 @@ public class CatBullet : MonoBehaviour {
 		// Feed the quaternion into our rotation
 		transform.rotation = rot;
 	}
-	void OnTriggerEnter2D(){
-		Debug.Log("cat!");
-		Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
-		currVel.x = Random.Range (-1f, 1f);
-		currVel.y = 2f;
-		currVel = currVel.normalized * speed;
-		GetComponent<Rigidbody2D> ().velocity = currVel;
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == TagHelper.ASTEROIRD) {
+			Debug.Log("cat hit astorid");
+			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
+			currVel.x = Random.Range (-1f, 1f);
+			currVel.y = 2f;
+			currVel = currVel.normalized * speed;
+			GetComponent<Rigidbody2D> ().velocity = currVel;
+		}
 		
 	}
 	

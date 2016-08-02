@@ -1,38 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CollisionDamage : MonoBehaviour {
-
-   public int health = 1;
-    public int scoreValue;
-    private PlayerSpawner playerSpawner;
+public class CollisionDamage : MonoBehaviour
+{
+	public int health = 1;
+	public int scoreValue;
+	private PlayerSpawner playerSpawner;
 	public GameObject explosion;
 
-    void Start()
-    {
-        GameObject playerSpawnerObject = GameObject.FindWithTag("PlayerSpawnSpot");
-        if (playerSpawnerObject != null)
-        {
-            playerSpawner = playerSpawnerObject.GetComponent<PlayerSpawner>();
-        }
-    }
-    void OnTriggerEnter2D(){
-        Debug.Log("Trigger!");
+	void Start ()
+	{
+		GameObject playerSpawnerObject = GameObject.FindWithTag ("PlayerSpawnSpot");
+		if (playerSpawnerObject != null) {
+			playerSpawner = playerSpawnerObject.GetComponent<PlayerSpawner> ();
+		}
+	}
 
-        health--;
-        playerSpawner.AddScore(scoreValue);
-    }
+	void OnTriggerEnter2D (Collider2D other)
+	{
+		Debug.Log ("Trigger!");
+		health--;
+		playerSpawner.AddScore (scoreValue);
+	}
 
-    void Update(){
+	void Update ()
+	{
 		if (health <= 0) {
-			Die ();
 			Instantiate (explosion, transform.position, transform.rotation);
+			Destroy (gameObject);
 		}
 
-		} 
-
-    void Die(){
-        Destroy(gameObject);
-    }
-
+	}
 }

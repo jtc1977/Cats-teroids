@@ -1,31 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CatBullet : MonoBehaviour {
+public class Bullet : MonoBehaviour {
+	//Y speed(Upward)
 	public float speed = 3;
-	public float rotSpeed = 90f;
-	
+	public float rotSpeed = 90f;	
 	float shipBoundaryRadius = .5f;
-	
-	//public float force;
 	
 	void Start() {
 		// Initial Velocity
 		GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
 		gameObject.transform.Rotate (0,0,90);
-		//GetComponent<Rigidbody2D>().AddForce (new Vector2 (1f, .5f) * Time.deltaTime * force);
 	}
 	
 	void Update(){
 		Vector3 pos = transform.position;
-		
-		
-		/*if(pos.y+shipBoundaryRadius > Camera.main.orthographicSize) {
-			pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
-		}
-		if(pos.y-shipBoundaryRadius < -Camera.main.orthographicSize) {
-			pos.y = -Camera.main.orthographicSize + shipBoundaryRadius;
-		}*/
 		
 		// Now calculate the orthographic width based on the screen ratio
 		float screenRatio = (float)Screen.width / (float)Screen.height;
@@ -70,6 +59,7 @@ public class CatBullet : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == TagHelper.ASTEROIRD) {
 			Debug.Log("cat hit astorid");
+			//slowdown & change direction when hit
 			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
 			currVel.x = Random.Range (-1f, 1f);
 			currVel.y = 2f;

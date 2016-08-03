@@ -112,6 +112,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1816798596}
+  - {fileID: 2014542537}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!1 &17988731
@@ -240,7 +241,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 393789714}
   - 132: {fileID: 393789713}
-  - 114: {fileID: 393789715}
   m_Layer: 0
   m_Name: LivesText
   m_TagString: Untagged
@@ -285,18 +285,6 @@ Transform:
   - {fileID: 1832489752}
   m_Father: {fileID: 1878973932}
   m_RootOrder: 0
---- !u!114 &393789715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 393789712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7034db6d670dc45b3b19ce55b69131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _updateInterval: 0.1
 --- !u!1 &467625043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,8 +1193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerObject: {fileID: 0}
-  Lives: 4
-  Score: 0
 --- !u!1 &1832489751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,6 +1470,50 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9930946b7c5f48e44aef1e56c2de7315, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2014542536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2014542537}
+  - 114: {fileID: 2014542538}
+  m_Layer: 0
+  m_Name: UIController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2014542537
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014542536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.9768496, y: 3.2800136, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 10361034}
+  m_RootOrder: 1
+--- !u!114 &2014542538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014542536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6b77b5f7f85354d9a23298ced36c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextLife: {fileID: 393789713}
+  TextScore: {fileID: 39271512}
+  TextGameOver: {fileID: 1102505400}
+  TextRestart: {fileID: 1408636793}
 --- !u!1 &2067826138
 GameObject:
   m_ObjectHideFlags: 0

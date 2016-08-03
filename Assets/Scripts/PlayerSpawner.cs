@@ -17,7 +17,7 @@ public class PlayerSpawner : MonoBehaviour
 
 	void SpawnPlayer ()
 	{
-		GameController.GC.Lives--;
+		GameController.GC.SubtractLife (1);
 //		livesText.text = "LIVES: " + lives;
 		respawnTimerCounter = _respawnTimer;
 		GameController.GC.PlayerObject = ((GameObject)Instantiate (playerPrefab, transform.position, Quaternion.identity)).transform;
@@ -26,7 +26,7 @@ public class PlayerSpawner : MonoBehaviour
 	void Update ()
 	{
 		//if dead, spawn after respawn timer
-		if (GameController.GC.PlayerObject == null && GameController.GC.Lives > 0) {
+		if (GameController.GC.PlayerObject == null && GameController.GC.GetLife()> 0) {
 			respawnTimerCounter -= Time.deltaTime;
 			if (respawnTimerCounter <= 0) {
 				SpawnPlayer ();

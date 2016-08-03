@@ -13,7 +13,7 @@ public class DieOnPosition : MonoBehaviour {
 	void Update () 
 	{
 		if ((greaterThan && transform.position.y < yPosition)) {
-			GameController.GC.Score -= 20;
+			GameController.GC.SubtractScore (20);
 			Destroy (gameObject);
 		}
 	}

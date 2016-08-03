@@ -7,19 +7,11 @@ public class CollisionDamage : MonoBehaviour
 	public int scoreValue;
 	public GameObject explosion;
 
-	void Start ()
-	{
-//		GameObject playerSpawnerObject = GameObject.FindWithTag ("PlayerSpawnSpot");
-//		if (playerSpawnerObject != null) {
-//			playerSpawner = playerSpawnerObject.GetComponent<PlayerSpawner> ();
-//		}
-	}
-
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		Debug.Log ("Trigger!");
+//		Debug.Log ("Trigger!");
 		health--;
-		GameController.GC.Score += scoreValue;
+		GameController.GC.AddScore (scoreValue);
 	}
 
 	void Update ()

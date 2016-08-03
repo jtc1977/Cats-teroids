@@ -13,13 +13,8 @@ public class DieOnPosition : MonoBehaviour {
 	void Update () 
 	{
 		if ((greaterThan && transform.position.y < yPosition)) {
-			GameObject.FindWithTag ("PlayerSpawnSpot").GetComponent <PlayerSpawner>().AddScore(-20);
-
+			GameController.GC.Score -= 20;
 			Destroy (gameObject);
 		}
-
-
 	}
-
-
 }

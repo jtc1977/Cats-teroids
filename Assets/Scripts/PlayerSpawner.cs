@@ -5,88 +5,46 @@ public class PlayerSpawner : MonoBehaviour
 {
 	
 	public GameObject playerPrefab;
-	GameObject playerInstance;
-	
-	public int lives = 4;
-	float respawnTimer;
-	public GUIText livesText;
-	public GUIText scoreText;
-	public int score;
-	public GUIText restartText;
-	public GUIText gameOverText;
-	
-	
-	public bool gameOver;
-	public bool restart;
+	//how long does it take to respawn player?
+	[SerializeField] float _respawnTimer = 2f;
+	float respawnTimerCounter;
 	
 	// Use this for initialization
-	void Start()
+	void Start ()
 	{
-		gameOver = false;
-		restart = false;
-		restartText.text = "";
-		gameOverText.text = "";
-		score = 0;
-		UpdateScore();
-		//Duke : I want to delete this line of code
-//		livesText = GameObject.Find ("livesText").GetComponent<GUIText>();
-		SpawnPlayer();
-		
+		SpawnPlayer ();		
 	}
-	
-	void SpawnPlayer()
-	{
-		lives--;
-		livesText.text = "LIVES: " + lives;
-		respawnTimer = 2;
-		playerInstance = (GameObject)Instantiate(playerPrefab, transform.position, Quaternion.identity);
-	}
-	
-	
-	// Update is called once per frame
-	void Update()
-	{
-		if (playerInstance == null && lives < 1) {
-			gameOverText.text = "SUCKS TO BE YOU";
-			gameOver = true;
-		}
-		
-		if (gameOver){
-			restartText.text = "Press 'R' to Restart";
-			restart = true;
-		}
-		if (restart) {
-			if (Input.GetKeyDown (KeyCode.R)) {
-				Application.LoadLevel (Application.loadedLevel);
-			}
-		}
-		
-		if (playerInstance == null && lives > 0) {
-			respawnTimer -= Time.deltaTime;
-			
-			if (respawnTimer <= 0) {
-				SpawnPlayer ();
-			}
-			
-		}
-		
-	}
-	public void AddScore (int newScoreValue)
-	{
-		score += newScoreValue;
-		UpdateScore();
-	}
-	
-	void UpdateScore()
-	{
-		scoreText.text = "SCORE: " + score;
 
+	void SpawnPlayer ()
+	{
+		GameController.GC.Lives--;
+//		livesText.text = "LIVES: " + lives;
+		respawnTimerCounter = _respawnTimer;
+		GameController.GC.PlayerObject = ((GameObject)Instantiate (playerPrefab, transform.position, Quaternion.identity)).transform;
 	}
-	public void GameOver(){
-		
-		gameOverText.text = "SUCKS TO BE YOU";
-		gameOver = true;
-		
-		
+
+	void Update ()
+	{
+		//if dead, spawn after respawn timer
+		if (GameController.GC.PlayerObject == null && GameController.GC.Lives > 0) {
+			respawnTimerCounter -= Time.deltaTime;
+			if (respawnTimerCounter <= 0) {
+				SpawnPlayer ();
+			}			
+		}		
 	}
+	//	public void AddScore (int newScoreValue)
+	//	{
+	//		score += newScoreValue;
+	//		UpdateScore();
+	//	}
+	//	void UpdateScore()
+	//	{
+	//		scoreText.text = "SCORE: " + score;
+	//	}
+	//	public void GameOver(){
+	//
+	//		gameOverText.text = "SUCKS TO BE YOU";
+	//		gameOver = true;
+	//	}
 }

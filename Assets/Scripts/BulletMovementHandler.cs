@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bullet : MonoBehaviour {
+public class BulletMovementHandler : MonoBehaviour {
 	//Y speed(Upward)
 	public float speed = 3;
 	public float rotSpeed = 90f;	
@@ -36,11 +36,10 @@ public class Bullet : MonoBehaviour {
 			currVel.y = 1.5f;
 			currVel = currVel.normalized * speed;
 			GetComponent<Rigidbody2D> ().velocity = currVel;
-
 		}
-		// Finally, update our position!!
-		transform.position = pos;
-		
+
+//		 Finally, update our position!!
+		transform.position = pos;		
 		// Grab our rotation quaternion
 		Quaternion rot = transform.rotation;
 		
@@ -65,11 +64,6 @@ public class Bullet : MonoBehaviour {
 			currVel.y = 2f;
 			currVel = currVel.normalized * speed;
 			GetComponent<Rigidbody2D> ().velocity = currVel;
-		}
-		
-	}
-	
-	
-	
-	
+		}	
+	}	
 }	

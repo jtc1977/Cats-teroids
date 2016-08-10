@@ -12,5 +12,13 @@ public class ObjectStatusHandler : MonoBehaviour {
 	}
 	public void SetHealth(int newHealth){
 		_health = newHealth;
+		if (_health <= 0)
+			die ();
+	}
+	public void SubtractHealth(int amount){
+		SetHealth (_health - amount);
+	}
+	protected virtual void die(){
+		Destroy (gameObject);
 	}
 }

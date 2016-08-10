@@ -11,10 +11,10 @@ public class UIController : MonoBehaviour {
 
 	[SerializeField] GUIText TextLife;
 	[SerializeField] GUIText TextScore;
-	public GUIText TextGameOver;
-	public GUIText TextRestart;
+	[SerializeField] GUIText TextGameOver;
+	[SerializeField] GUIText TextRestart;
 
-	void Start () {
+	void Awake () {
 		if (UIC == null)
 			UIC = this;
 		else
@@ -30,6 +30,12 @@ public class UIController : MonoBehaviour {
 	}
 	public void SetScore(int newScore){
 		TextScore.text = "SCORE : " + newScore;
+	}
+	public void DisplayGameOver(){
+		TextGameOver.text = "SUCKS TO BE YOU";
+	}
+	public void DisplayRestart(){
+		TextRestart.text = "Press 'R' to Restart";
 	}
 	public void OnLevelWasLoaded(int level)
 	{

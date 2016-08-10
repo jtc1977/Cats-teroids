@@ -33,18 +33,4 @@ public class PlayerSpawner : MonoBehaviour
 			}			
 		}		
 	}
-	//	public void AddScore (int newScoreValue)
-	//	{
-	//		score += newScoreValue;
-	//		UpdateScore();
-	//	}
-	//	void UpdateScore()
-	//	{
-	//		scoreText.text = "SCORE: " + score;
-	//	}
-	//	public void GameOver(){
-	//
-	//		gameOverText.text = "SUCKS TO BE YOU";
-	//		gameOver = true;
-	//	}
 }

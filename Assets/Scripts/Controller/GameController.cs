@@ -16,30 +16,28 @@ public class GameController : MonoBehaviour
 	int _life;
 	int _score;
 	bool _gameOver;
-	bool _restart;
 
 	//Controllers handle initialization in Awake since controllers needed to be initialized before other scripts
-	void Awake(){
+	void Awake ()
+	{
 		if (GC == null)
 			GC = this;
 
 		_life = 4;
 		_score = 0;
 		_gameOver = false;
-		_restart = false;
 	}
 
-	void Update(){
+
+	void Update ()
+	{
 		if (GameController.GC._life < 1) {
-			UIController.UIC.TextGameOver.text = "SUCKS TO BE YOU";
+			UIController.UIC.DisplayGameOver ();
+			UIController.UIC.DisplayRestart ();
 			_gameOver = true;
 		}
 
-		if (_gameOver){
-			UIController.UIC.TextRestart.text = "Press 'R' to Restart";
-			_restart = true;
-		}
-		if (_restart) {
+		if (_gameOver) {
 			if (Input.GetKeyDown (KeyCode.R)) {
 				Application.LoadLevel (Application.loadedLevel);
 
@@ -48,34 +46,49 @@ public class GameController : MonoBehaviour
 			}
 		}
 	}
+
 	//get/set Score
-	public int GetScore(){
+	public int GetScore ()
+	{
 		return _score;
 	}
-	public void AddScore(int amount){
+
+	public void AddScore (int amount)
+	{
 		SetScore (_score + amount);
 	}
-	public void SubtractScore(int amount){
+
+	public void SubtractScore (int amount)
+	{
 		SetScore (_score - amount);
 	}
-	public void SetScore(int newScore){
+
+	public void SetScore (int newScore)
+	{
 		_score = newScore;
 		//update UI Text
-		UIController.UIC.SetScore(_score);
+		UIController.UIC.SetScore (_score);
 	}
 	//get/set Life
-	public int GetLife(){
+	public int GetLife ()
+	{
 		return _life;
 	}
-	public void AddLife(int amount){
+
+	public void AddLife (int amount)
+	{
 		SetLife (_life + amount);
 	}
-	public void SubtractLife(int amount){
+
+	public void SubtractLife (int amount)
+	{
 		SetLife (_life - amount);
 	}
-	public void SetLife(int newLife){
+
+	public void SetLife (int newLife)
+	{
 		_life = newLife;
 		//Update UI Text
-		UIController.UIC.SetLife(newLife);
+		UIController.UIC.SetLife (newLife);
 	}
 }

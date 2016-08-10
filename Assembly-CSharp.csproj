@@ -45,10 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AsteroidMovement.cs" />
-     <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\AsteroidMovementHandler.cs" />
+     <Compile Include="Assets\Scripts\AsteroidStatusHandler.cs" />
+     <Compile Include="Assets\Scripts\BulletMovementHandler.cs" />
      <Compile Include="Assets\Scripts\CannonMove.cs" />
-     <Compile Include="Assets\Scripts\CollisionDamage.cs" />
+     <Compile Include="Assets\Scripts\CombatHandler.cs" />
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\UIController.cs" />
      <Compile Include="Assets\Scripts\DieOnPosition.cs" />
@@ -59,7 +60,6 @@
      <Compile Include="Assets\Scripts\PlayerShooting.cs" />
      <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
      <Compile Include="Assets\Scripts\SelfDestruct.cs" />
-     <Compile Include="Assets\Scripts\TouchScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

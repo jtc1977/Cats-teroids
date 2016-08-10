@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AsteroidMovement : MonoBehaviour {
+public class AsteroidMovementHandler : MonoBehaviour {
 
 	public float maxSpeed = 3f;
 	public float rotSpeed = 90f;

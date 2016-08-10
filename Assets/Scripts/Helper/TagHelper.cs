@@ -8,4 +8,5 @@ using System.Collections.Generic;
 /// </summary>
 public static class TagHelper{
 	public static string ASTEROIRD = "Asteroid";
+	public static string BULLET = "Bullet";
 }

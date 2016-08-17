@@ -309,10 +309,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 467625043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b33e99c765e02247a56f08c7d1880ad, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1c8b2f8cfaa13418071c3b2f14e652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 120572, guid: 6cfe01cddc7181043a6726ba5f7879dd, type: 2}
+  prefab: {fileID: 120572, guid: 6cfe01cddc7181043a6726ba5f7879dd, type: 2}
   spawnTime: 2
 --- !u!4 &467625045
 Transform:
@@ -522,10 +522,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 735434972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b33e99c765e02247a56f08c7d1880ad, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1c8b2f8cfaa13418071c3b2f14e652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 161542, guid: 246fa1cc9bceb694a80f5e3171a6bf6c, type: 2}
+  prefab: {fileID: 161542, guid: 246fa1cc9bceb694a80f5e3171a6bf6c, type: 2}
   spawnTime: 4
 --- !u!4 &735434974
 Transform:
@@ -564,10 +564,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 751934212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b33e99c765e02247a56f08c7d1880ad, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1c8b2f8cfaa13418071c3b2f14e652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 158200, guid: cc761d6098f92314ba0f193f72bbbb01, type: 2}
+  prefab: {fileID: 158200, guid: cc761d6098f92314ba0f193f72bbbb01, type: 2}
   spawnTime: 3
 --- !u!4 &751934214
 Transform:
@@ -1042,10 +1042,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1617751543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b33e99c765e02247a56f08c7d1880ad, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1c8b2f8cfaa13418071c3b2f14e652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 195984, guid: 2728a9949d8d7db4e96241ab7ac569cb, type: 2}
+  prefab: {fileID: 195984, guid: 2728a9949d8d7db4e96241ab7ac569cb, type: 2}
   spawnTime: 5
 --- !u!4 &1617751545
 Transform:
@@ -1538,10 +1538,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067826138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b33e99c765e02247a56f08c7d1880ad, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1c8b2f8cfaa13418071c3b2f14e652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 170212, guid: be0ba4a72f08e1e47b558746f13113c9, type: 2}
+  prefab: {fileID: 170212, guid: be0ba4a72f08e1e47b558746f13113c9, type: 2}
   spawnTime: 4
 --- !u!4 &2067826140
 Transform:

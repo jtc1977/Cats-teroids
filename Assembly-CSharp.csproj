@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AsteroidMovementHandler.cs" />
+     <Compile Include="Assets\Scripts\AsteroidSpawner.cs" />
      <Compile Include="Assets\Scripts\AsteroidStatusHandler.cs" />
      <Compile Include="Assets\Scripts\BulletMovementHandler.cs" />
      <Compile Include="Assets\Scripts\CannonMove.cs" />
@@ -53,7 +54,6 @@
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\UIController.cs" />
      <Compile Include="Assets\Scripts\DieOnPosition.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Helper\LayerHelper.cs" />
      <Compile Include="Assets\Scripts\Helper\TagHelper.cs" />
      <Compile Include="Assets\Scripts\ObjectStatusHandler.cs" />

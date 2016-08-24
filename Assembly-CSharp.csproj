@@ -52,7 +52,10 @@
      <Compile Include="Assets\Scripts\CannonMove.cs" />
      <Compile Include="Assets\Scripts\CombatHandler.cs" />
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
+     <Compile Include="Assets\Scripts\Controller\InputController.cs" />
      <Compile Include="Assets\Scripts\Controller\UIController.cs" />
+     <Compile Include="Assets\Scripts\DevFPSUpdate.cs" />
+     <Compile Include="Assets\Scripts\DevText.cs" />
      <Compile Include="Assets\Scripts\DieOnPosition.cs" />
      <Compile Include="Assets\Scripts\Helper\LayerHelper.cs" />
      <Compile Include="Assets\Scripts\Helper\TagHelper.cs" />

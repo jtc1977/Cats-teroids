@@ -53,3 +53,6 @@ TagManager:
   - name: asteroids
     uniqueID: 2044182155
     locked: 0
+  - name: UI
+    uniqueID: 872975719
+    locked: 0

@@ -46,8 +46,8 @@ public class AsteroidSpawner : MonoBehaviour
 				ASTEROIDS.Add (go.transform);
 			} else {
 				print ("No empty space, asteroids count : " + ASTEROIDS.Count);
-				foreach (var a in ASTEROIDS)
-					print (a.name);
+//				foreach (var a in ASTEROIDS)
+//					print (a.name);
 			}
 
 //			GameObject go = (GameObject)Instantiate (prefab, new Vector3(Random.Range (-3,3), Random.Range (3,7),0f), Quaternion.identity);

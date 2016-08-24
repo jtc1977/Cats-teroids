@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 /// <summary>
@@ -9,10 +10,10 @@ public class UIController : MonoBehaviour {
 	//singleton instance
 	public static UIController UIC;
 
-	[SerializeField] GUIText TextLife;
-	[SerializeField] GUIText TextScore;
-	[SerializeField] GUIText TextGameOver;
-	[SerializeField] GUIText TextRestart;
+	[SerializeField] Text TextLife;
+	[SerializeField] Text TextScore;
+	[SerializeField] Text TextGameOver;
+	[SerializeField] Text TextRestart;
 
 	void Awake () {
 		if (UIC == null)
@@ -42,5 +43,10 @@ public class UIController : MonoBehaviour {
 		//Duke 8/2/2016
 		//Note : I think I ran into singleton instance remaining as if this gameobject is called with DontDestroyOnLoad,
 		//But does not replicate here. So if problem shows, handle here by destroying old instance, if not, ignore or delete this.
+	}
+
+	//for test
+	public void PrintToEditor(string content){
+		print (content);
 	}
 }

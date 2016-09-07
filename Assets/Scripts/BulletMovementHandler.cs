@@ -57,7 +57,7 @@ public class BulletMovementHandler : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == TagHelper.ASTEROIRD) {
-			Debug.Log("cat hit astorid");
+//			Debug.Log("cat hit astorid");
 			//slowdown & change direction when hit
 			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
 			currVel.x = Random.Range (-1f, 1f);

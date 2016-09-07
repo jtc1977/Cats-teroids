@@ -13,12 +13,15 @@ public class ObjectStatusHandler : MonoBehaviour {
 	public void SetHealth(int newHealth){
 		_health = newHealth;
 		if (_health <= 0)
-			die ();
+			Die ();
 	}
-	public void SubtractHealth(int amount){
+	public virtual void SubtractHealth(int amount){
 		SetHealth (_health - amount);
 	}
-	protected virtual void die(){
+	/// <summary>
+	/// kill this object
+	/// </summary>
+	public virtual void Die(){
 		Destroy (gameObject);
 	}
 }

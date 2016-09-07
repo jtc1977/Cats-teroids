@@ -6,7 +6,7 @@ public class AsteroidStatusHandler : ObjectStatusHandler
 	[SerializeField] GameObject _explosionPrefab;
 	[SerializeField] int scoreValue;
 
-	protected override void die ()
+	public override void Die ()
 	{
 //		base.die ();
 		Instantiate (_explosionPrefab, transform.position, transform.rotation);

@@ -27,32 +27,13 @@ public class AsteroidSpawner : MonoBehaviour
 		timeToSpawn -= Time.deltaTime;
 		
 		if (timeToSpawn <= 0) {
-//			Camera.main.
-			//
-//			print ("Width : " + Screen.width + ", height : " + Screen.height);
-//			Vector3 temp = Camera.main.ScreenToWorldPoint (new Vector3 (Screen.width, Screen.height, 0));
-//			temp.z = 0f;
-//			print (temp.ToString ());
-//			GameObject go2 = (GameObject)Instantiate (prefab, temp, Quaternion.identity);
-//			temp = Camera.main.ScreenToWorldPoint (new Vector3 (0, 0, 0));
-//			GameObject go = (GameObject)Instantiate (prefab, temp, Quaternion.identity);
-//			Debug.Break ();
-
-
-			//
 			ASTEROIDS.RemoveAll (x => x == null);
 			if (haveEmptyArea ()) {
 				GameObject go = (GameObject)Instantiate (prefab, getEmptyArea (), Quaternion.identity);
 				ASTEROIDS.Add (go.transform);
 			} else {
 				print ("No empty space, asteroids count : " + ASTEROIDS.Count);
-//				foreach (var a in ASTEROIDS)
-//					print (a.name);
 			}
-
-//			GameObject go = (GameObject)Instantiate (prefab, new Vector3(Random.Range (-3,3), Random.Range (3,7),0f), Quaternion.identity);
-//			ASTEROIDS.Add (go.transform);
-
 			timeToSpawn = spawnTime;
 		}
 	}
@@ -130,6 +111,7 @@ public class AsteroidSpawner : MonoBehaviour
 		int widthMax = Screen.width;
 		int heightMax = Screen.height;
 		int widthMin = 0;
+
 		//all width, two third of height from top to bottom is the spawn area
 		int heightMin = (int)((float)Screen.height / 1.5f);
 

@@ -6,9 +6,11 @@ public class InputController : MonoBehaviour
 	public static InputController IC;
 
 	float touchBeganTimer = 0;
+	float touch2BeganTimer = 0;
 	float tapTimer = 0.3f;
 	//how quick of a touch is considered as a tap? in seconds
 	Vector2 touchBeginPos = Vector2.zero;
+	Vector2 touch2BeginPos = Vector2.zero;
 	float tapCancelPos = 0.2f;
 	//if touch is moved(swiped), don't fire
 	bool _gyroControl = false;
@@ -37,8 +39,7 @@ public class InputController : MonoBehaviour
 	/// </summary>
 	/// <returns><c>true</c>, if input is triggered to fire, <c>false</c> otherwise.</returns>
 	/// <param name="pos">Position.</param>
-	/// <param name="fireCDTimer">Fire CD timer.</param>
-	public bool GetFire (Vector3 pos, float fireCDTimer)
+	public bool GetFire (Vector3 pos)
 	{
 		switch (Application.platform) {
 		case RuntimePlatform.WindowsPlayer:
@@ -49,19 +50,32 @@ public class InputController : MonoBehaviour
 		case RuntimePlatform.OSXDashboardPlayer:
 		case RuntimePlatform.OSXPlayer:
 		case RuntimePlatform.OSXWebPlayer:
-			if (Input.GetButton ("Fire1") && fireCDTimer <= 0)
+			if (Input.GetButton ("Fire1"))
 				return true;
 			break;
 		case RuntimePlatform.Android:
 		case RuntimePlatform.IPhonePlayer:
 		case RuntimePlatform.BlackBerryPlayer:
 			Touch touchInput = Input.GetTouch (0);
-			if (touchInput.phase == TouchPhase.Began && fireCDTimer <= 0) {
+			Touch touchInput2 = Input.GetTouch (1);
+
+			if (touchInput2.phase == TouchPhase.Began) {
+				touch2BeganTimer = Time.time + tapTimer;
+				touch2BeginPos = pos;
+				return false;
+			} else if (touchInput2.phase == TouchPhase.Ended && Vector2.Distance (touch2BeginPos, pos) < tapCancelPos && touch2BeganTimer > Time.time) {
+				return true;
+			} else if (touchInput2.phase == TouchPhase.Moved || touchInput2.phase == TouchPhase.Stationary) {
+				return false;
+			}
+
+			if (touchInput.phase == TouchPhase.Began) {
 				touchBeganTimer = Time.time + tapTimer;
 				touchBeginPos = pos;
-			} else if (touchInput.phase == TouchPhase.Ended && Vector2.Distance (touchBeginPos, pos) < tapCancelPos && touchBeganTimer > Time.time && fireCDTimer <= 0) {
+			} else if (touchInput.phase == TouchPhase.Ended && Vector2.Distance (touchBeginPos, pos) < tapCancelPos && touchBeganTimer > Time.time) {
 				return true;
 			}
+
 			break;
 		default:			
 			Debug.LogWarning ("Platform Not Defined");

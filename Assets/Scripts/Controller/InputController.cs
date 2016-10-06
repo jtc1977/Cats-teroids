@@ -46,6 +46,7 @@ public class InputController : MonoBehaviour
 		case RuntimePlatform.WindowsEditor:
 		case RuntimePlatform.WindowsWebPlayer:
 		case RuntimePlatform.LinuxPlayer:
+		case RuntimePlatform.WebGLPlayer:
 		case RuntimePlatform.OSXEditor:
 		case RuntimePlatform.OSXDashboardPlayer:
 		case RuntimePlatform.OSXPlayer:
@@ -95,6 +96,7 @@ public class InputController : MonoBehaviour
 		float InputX = transform.position.x;
 		switch (Application.platform) {
 		case RuntimePlatform.WindowsPlayer:
+		case RuntimePlatform.WebGLPlayer:
 		case RuntimePlatform.WindowsEditor:
 		case RuntimePlatform.WindowsWebPlayer:
 		case RuntimePlatform.LinuxPlayer:

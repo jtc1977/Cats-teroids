@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BulletMovementHandler : MonoBehaviour {
+public class BulletMovementHandler : MonoBehaviour
+{
 	//Y speed(Upward)
 	public float speed = 3;
-	public float rotSpeed = 90f;	
+	public float rotSpeed = 90f;
 	float shipBoundaryRadius = .5f;
-	
-	void Start() {
+
+	void Start ()
+	{
 		// Initial Velocity
-		GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
-		gameObject.transform.Rotate (0,0,90);
+		GetComponent<Rigidbody2D> ().velocity = Vector2.up * speed;
+		gameObject.transform.Rotate (0, 0, 90);
 	}
-	
-	void Update(){
+
+	void Update ()
+	{
 		Vector3 pos = transform.position;
 		
 		// Now calculate the orthographic width based on the screen ratio
@@ -21,15 +24,15 @@ public class BulletMovementHandler : MonoBehaviour {
 		float widthOrtho = Camera.main.orthographicSize * screenRatio;
 		
 		// Now do horizontal bounds
-		if(pos.x+shipBoundaryRadius > widthOrtho) {
-			pos.x = widthOrtho - shipBoundaryRadius ;
+		if (pos.x + shipBoundaryRadius > widthOrtho) {
+			pos.x = widthOrtho - shipBoundaryRadius;
 			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
 			currVel.x = -currVel.x;
 			//currVel.y = 1.5f;
 			//currVel = currVel.normalized * speed;
 			GetComponent<Rigidbody2D> ().velocity = currVel;
 		}
-		if(pos.x-shipBoundaryRadius < -widthOrtho) {
+		if (pos.x - shipBoundaryRadius < -widthOrtho) {
 			pos.x = -widthOrtho + shipBoundaryRadius;
 			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
 			currVel.x = Random.Range (-2f, 2f);
@@ -50,20 +53,73 @@ public class BulletMovementHandler : MonoBehaviour {
 		z -= rotSpeed * Time.deltaTime;
 		
 		// Recreate the quaternion
-		rot = Quaternion.Euler( 0, 0, z );
+		rot = Quaternion.Euler (0, 0, z);
 		
 		// Feed the quaternion into our rotation
 		transform.rotation = rot;
 	}
-	void OnTriggerEnter2D(Collider2D other){
+
+	void OnTriggerEnter2D (Collider2D other)
+	{
 		if (other.tag == TagHelper.ASTEROIRD) {
 //			Debug.Log("cat hit astorid");
+
 			//slowdown & change direction when hit
+//			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
+//			currVel.x = Random.Range (-1f, 1f);
+//			currVel.y = 2f;
+//			currVel = currVel.normalized * speed;
+//			GetComponent<Rigidbody2D> ().velocity = currVel;
+
 			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
-			currVel.x = Random.Range (-1f, 1f);
-			currVel.y = 2f;
-			currVel = currVel.normalized * speed;
+			//if compared object position is left, move left, move right otherwise
+//			print ("cat x : " + transform.position.x + ", ast x : " + other.transform.position.x);
+			float xPosDiff = transform.position.x - other.transform.position.x;
+			if (xPosDiff > 0f) {
+//				print ("right");
+				//if cat is on the right side
+
+				//randomize X speed if it's too low
+				if (Mathf.Abs (currVel.x) < 0.2f) {
+					currVel.x = Random.Range (0.5f, 1f);
+					currVel.y = 2f;
+					currVel = currVel.normalized * speed;
+				} else if (currVel.x < 0f) {
+					//going left
+					//othewise, flip x value
+					currVel.x = -currVel.x;
+					currVel = currVel.normalized * speed;
+				} else {
+					//going right
+					currVel.x += Random.Range(0f, 0.5f);
+					Mathf.Clamp (currVel.x, 0.5f, 1.5f);
+					currVel = currVel.normalized * speed;
+				}
+			} else {
+				//left
+//				print("left");
+
+				//randomize X speed if it's too low
+				if (Mathf.Abs (currVel.x) < 0.2f) {
+					currVel.x = Random.Range (-1f, -0.5f);
+					currVel.y = 2f;
+					currVel = currVel.normalized * speed;
+				} else if (currVel.x > 0f) {
+					//going right
+					//othewise, flip x value
+					currVel.x = -currVel.x;
+					currVel = currVel.normalized * speed;					
+				} else {
+					//going left
+					currVel.x -= Random.Range(0f, 0.5f);
+					Mathf.Clamp (currVel.x, -1.5f, -0.5f);
+					currVel = currVel.normalized * speed;	
+				}
+
+			}
+//			Debug.Break ();
+			//apply velocity
 			GetComponent<Rigidbody2D> ().velocity = currVel;
 		}	
-	}	
-}	
+	}
+}

@@ -1,17 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.WindowsWebPlayer" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controller\InputController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BulletMovementHandler.cs">
     <Files>
-      <File FileName="Assets\Scripts\BulletMovementHandler.cs" Line="59" Column="42" />
-      <File FileName="Assets\Scripts\AsteroidStatusHandler.cs" Line="7" Column="34" />
-      <File FileName="Assets\Scripts\PlayerShooting.cs" Line="26" Column="30" />
-      <File FileName="Assets\Scripts\Controller\InputController.cs" Line="51" Column="43" />
+      <File FileName="Assets\Scripts\CombatHandler.cs" Line="5" Column="21" />
+      <File FileName="Assets\Scripts\BulletMovementHandler.cs" Line="77" Column="71" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="C:\Users\gusrb\Documents\GitHub\Cats-teroids\Assets\Scripts\BulletMovementHandler.cs" line="54" column="3" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

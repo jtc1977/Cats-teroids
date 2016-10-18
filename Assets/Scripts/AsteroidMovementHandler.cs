@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AsteroidMovementHandler : MonoBehaviour {
 
-	public float maxSpeed = 3f;
+//	public float maxSpeed = 3f;
 	public float rotSpeed = 90f;
 	public float speed;
 
@@ -11,7 +11,7 @@ public class AsteroidMovementHandler : MonoBehaviour {
 
 	void Start () {
 		//GetComponent<Rigidbody2D>();
-		GetComponent<Rigidbody2D>().velocity = Vector3.down * speed;
+		GetComponent<Rigidbody2D>().velocity = Vector3.down * Random.Range(0.5f, speed);
 	}
 	
 	void Update () {
@@ -36,7 +36,7 @@ public class AsteroidMovementHandler : MonoBehaviour {
 		// MOVE the ship.
 		Vector3 pos = transform.position;
 		 
-		Vector3 velocity = new Vector3(0,  maxSpeed * Time.deltaTime, 0);
+//		Vector3 velocity = new Vector3(0,  maxSpeed * Time.deltaTime, 0);
 
 		//pos += rot * velocity;
 

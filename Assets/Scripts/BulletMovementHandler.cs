@@ -7,12 +7,19 @@ public class BulletMovementHandler : MonoBehaviour
 	public float speed = 3;
 	public float rotSpeed = 90f;
 	float shipBoundaryRadius = .5f;
+	float minXVel;//minimumX velocity
+	float maxXVel;
+	float angularVel;
 
 	void Start ()
 	{
 		// Initial Velocity
 		GetComponent<Rigidbody2D> ().velocity = Vector2.up * speed;
 		gameObject.transform.Rotate (0, 0, 90);
+
+		minXVel = 1f;
+		maxXVel = speed * 0.8f;
+		angularVel = 0f;
 	}
 
 	void Update ()
@@ -43,20 +50,21 @@ public class BulletMovementHandler : MonoBehaviour
 
 //		 Finally, update our position!!
 		transform.position = pos;		
-		// Grab our rotation quaternion
-		Quaternion rot = transform.rotation;
-		
-		// Grab the Z euler angle
-		float z = rot.eulerAngles.z;
-		
-		// Change the Z angle based on input
-		z -= rotSpeed * Time.deltaTime;
-		
-		// Recreate the quaternion
-		rot = Quaternion.Euler (0, 0, z);
-		
-		// Feed the quaternion into our rotation
-		transform.rotation = rot;
+
+//		// Grab our rotation quaternion
+//		Quaternion rot = transform.rotation;
+//		
+//		// Grab the Z euler angle
+//		float z = rot.eulerAngles.z;
+//		
+//		// Change the Z angle based on input
+//		z -= rotSpeed * Time.deltaTime;
+//		
+//		// Recreate the quaternion
+//		rot = Quaternion.Euler (0, 0, z);
+//		
+//		// Feed the quaternion into our rotation
+//		transform.rotation = rot;
 	}
 
 	void OnTriggerEnter2D (Collider2D other)
@@ -81,8 +89,8 @@ public class BulletMovementHandler : MonoBehaviour
 
 				//randomize X speed if it's too low
 				if (Mathf.Abs (currVel.x) < 0.2f) {
-					currVel.x = Random.Range (0.5f, 1f);
-					currVel.y = 2f;
+					currVel.x = Random.Range (speed * 0.4f, speed * 0.6f);
+					currVel.y = speed * 0.3f;
 					currVel = currVel.normalized * speed;
 				} else if (currVel.x < 0f) {
 					//going left
@@ -91,18 +99,23 @@ public class BulletMovementHandler : MonoBehaviour
 					currVel = currVel.normalized * speed;
 				} else {
 					//going right
-					currVel.x += Random.Range(0f, 0.5f);
-					Mathf.Clamp (currVel.x, 0.5f, 1.5f);
+					currVel.x += Random.Range (0f, 0.5f);
+//					Mathf.Clamp (currVel.x, 0.5f, 1.5f);
+					Mathf.Clamp (currVel.x, minXVel, maxXVel);
 					currVel = currVel.normalized * speed;
 				}
+				//hit from the right, spin to the left
+				angularVel += Random.Range(rotSpeed/ 3f, rotSpeed/ 2f);
+				Mathf.Clamp (angularVel, rotSpeed / 3f, rotSpeed);
+
 			} else {
 				//left
 //				print("left");
 
 				//randomize X speed if it's too low
 				if (Mathf.Abs (currVel.x) < 0.2f) {
-					currVel.x = Random.Range (-1f, -0.5f);
-					currVel.y = 2f;
+					currVel.x = Random.Range (-speed * 0.6f, -speed * 0.4f);
+					currVel.y = speed * 0.3f;
 					currVel = currVel.normalized * speed;
 				} else if (currVel.x > 0f) {
 					//going right
@@ -111,15 +124,20 @@ public class BulletMovementHandler : MonoBehaviour
 					currVel = currVel.normalized * speed;					
 				} else {
 					//going left
-					currVel.x -= Random.Range(0f, 0.5f);
-					Mathf.Clamp (currVel.x, -1.5f, -0.5f);
+					currVel.x -= Random.Range (0f, 0.5f);
+					Mathf.Clamp (currVel.x, -maxXVel, -minXVel);
 					currVel = currVel.normalized * speed;	
 				}
-
+				//hit from the left, spin to the left
+				angularVel -= Random.Range(rotSpeed/ 3f, rotSpeed/ 2f);
+				Mathf.Clamp (angularVel, -rotSpeed, -rotSpeed / 3f);
 			}
 //			Debug.Break ();
 			//apply velocity
 			GetComponent<Rigidbody2D> ().velocity = currVel;
+
+			//apply spin
+			GetComponent<Rigidbody2D>().angularVelocity = angularVel;
 		}	
 	}
 }

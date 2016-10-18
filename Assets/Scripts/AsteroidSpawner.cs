@@ -113,7 +113,7 @@ public class AsteroidSpawner : MonoBehaviour
 		int widthMin = 0;
 
 		//all width, two third of height from top to bottom is the spawn area
-		int heightMin = (int)((float)Screen.height / 1.5f);
+		int heightMin = (int)((float)Screen.height / 1.2f);
 
 		int width = widthMax - widthMin;
 		int height = heightMax - heightMin;

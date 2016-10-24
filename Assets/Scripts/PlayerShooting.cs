@@ -29,9 +29,8 @@ public class PlayerShooting : MonoBehaviour
 			//dev only
 			if (Input.GetKeyDown (KeyCode.Tab)) {
 				DevText.DT.SetText ("Catbullet type swtiched");
-				if (_currentCatBulletNum == 0)
-					_currentCatBulletNum = 1;
-				else
+				_currentCatBulletNum++;
+				if(_currentCatBulletNum >= _catBulletPrefabs.Count)
 					_currentCatBulletNum = 0;
 			}
 		}

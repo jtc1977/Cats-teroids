@@ -15,6 +15,11 @@ public class UIController : MonoBehaviour {
 	[SerializeField] Text TextGameOver;
 	[SerializeField] Text TextRestart;
 
+	public UIBulletDisplayHandler UIBDH;
+
+	public GameObject InGame;
+	public GameObject MainMenu;
+
 	void Awake () {
 		if (UIC == null)
 			UIC = this;

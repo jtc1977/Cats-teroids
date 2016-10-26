@@ -24,6 +24,9 @@ public class AsteroidSpawner : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (GameController.GC.GetIsPaused ())
+			return;
+		
 		timeToSpawn -= Time.deltaTime;
 		
 		if (timeToSpawn <= 0) {

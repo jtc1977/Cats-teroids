@@ -181,7 +181,7 @@ MonoBehaviour:
   - {fileID: 170280, guid: bf03bfc931745dd499762f3a1d1132ab, type: 2}
   - {fileID: 170280, guid: ad05bf91670772a4bb7e94869df9c9d1, type: 2}
   - {fileID: 1000013185310908, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
-  fireDelay: 2
+  fireDelay: 1
 --- !u!114 &11406234
 MonoBehaviour:
   m_ObjectHideFlags: 1

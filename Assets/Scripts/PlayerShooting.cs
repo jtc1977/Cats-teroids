@@ -25,6 +25,7 @@ public class PlayerShooting : MonoBehaviour
 		if (!GameController.GC.GetIsPaused ()) {
 			if (InputController.IC.GetFire (transform.position)) {
 				Fire ();
+//				Debug.Break ();
 			}	
 			//dev only
 			if (Input.GetKeyDown (KeyCode.Tab)) {
@@ -32,6 +33,7 @@ public class PlayerShooting : MonoBehaviour
 				_currentCatBulletNum++;
 				if(_currentCatBulletNum >= _catBulletPrefabs.Count)
 					_currentCatBulletNum = 0;
+				UIController.UIC.UIBDH.SwitchCat ();
 			}
 		}
 	}
@@ -45,6 +47,7 @@ public class PlayerShooting : MonoBehaviour
 			fireCooldownTimer = fireDelay;
 			Vector3 offset = transform.rotation * new Vector3 (0, .75f, 0);
 			LastFiredBullet = (GameObject)Instantiate (_catBulletPrefabs[_currentCatBulletNum], transform.position + offset, transform.rotation);
+			LastFiredBullet.transform.rotation = _catBulletPrefabs [_currentCatBulletNum].transform.rotation;
 			LAST_SHOT_FRAME = Time.frameCount;
 		}
 	}

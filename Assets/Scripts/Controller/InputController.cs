@@ -51,7 +51,7 @@ public class InputController : MonoBehaviour
 		case RuntimePlatform.OSXDashboardPlayer:
 		case RuntimePlatform.OSXPlayer:
 		case RuntimePlatform.OSXWebPlayer:
-			if (Input.GetButton ("Fire1"))
+			if (Input.GetButtonDown ("Fire1"))
 				return true;
 			break;
 		case RuntimePlatform.Android:

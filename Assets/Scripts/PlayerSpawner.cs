@@ -12,10 +12,14 @@ public class PlayerSpawner : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		SpawnPlayer ();		
+		if (!GameController.GC.GetIsPaused ()) {
+			SpawnPlayer ();
+
+//			print (GameController.GC.GetIsPaused ().ToString ());
+		}
 	}
 
-	void SpawnPlayer ()
+	public void SpawnPlayer ()
 	{
 		GameController.GC.SubtractLife (1);
 //		livesText.text = "LIVES: " + lives;
@@ -25,6 +29,9 @@ public class PlayerSpawner : MonoBehaviour
 
 	void Update ()
 	{
+		if (GameController.GC.GetIsPaused ())
+			return;
+		
 		//if dead, spawn after respawn timer
 		if (GameController.GC.PlayerObject == null && GameController.GC.GetLife()> 0) {
 			respawnTimerCounter -= Time.deltaTime;

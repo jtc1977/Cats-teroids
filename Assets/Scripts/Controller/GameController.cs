@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
 	int _life;
 	int _score;
 	bool _gameOver;
-	bool _isPaused;
+	[SerializeField] bool _isPaused = false;
 
 	//Controllers handle initialization in Awake since controllers needed to be initialized before other scripts
 	void Awake ()
@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
 		_life = 4;
 		_score = 0;
 		_gameOver = false;
-		_isPaused = false;
+//		_isPaused = false;
 	}
 
 
@@ -49,6 +49,18 @@ public class GameController : MonoBehaviour
 					Destroy (GameController.GC.PlayerObject.gameObject);
 			}
 		}
+
+		//dev
+		if (Input.GetKeyDown (KeyCode.Backspace)) {
+			Pause ();
+//			foreach (Transform t in AsteroidSpawner.ASTEROIDS.ToArray())
+//				Destroy (t.gameObject);
+			for (int i = 0; i < AsteroidSpawner.ASTEROIDS.Count; i++)
+				Destroy (AsteroidSpawner.ASTEROIDS [i].gameObject);
+			Destroy (PlayerObject.gameObject);
+			UIController.UIC.InGame.SetActive (false);
+			UIController.UIC.MainMenu.SetActive (true);
+		}
 	}
 
 	public void SetGameOver(bool isOver){
@@ -58,13 +70,14 @@ public class GameController : MonoBehaviour
 	public void PauseToggle(){
 		//to disable from shooting when button is pushed
 		if (PlayerObject != null) {
-			PlayerObject.GetComponent<PlayerShooting> ().SetFireCooldownTimer (0.1f);
+			PlayerObject.GetComponent<PlayerShooting> ().SetFireCooldownTimer (0.2f);
 		}
 //		print ("PauseToggle");
 //		if(PlayerShooting.LastFiredBullet != null)
 //			print ("Current frame : " + Time.frameCount + ", last shot frame : " + PlayerShooting.LAST_SHOT_FRAME);
 		
-		if (Time.timeScale == 0f)
+//		if (Time.timeScale == 0f)
+		if(_isPaused)
 			Unpause ();
 		else
 			Pause ();
@@ -129,5 +142,9 @@ public class GameController : MonoBehaviour
 	}
 	public void MoveCannon(DIRECTION dir){
 		PlayerObject.GetComponent<CannonMove> ().Move (dir);
+	}
+
+	public void Quit(){
+		Application.Quit ();
 	}
 }

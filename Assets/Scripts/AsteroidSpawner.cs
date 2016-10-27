@@ -8,8 +8,10 @@ public class AsteroidSpawner : MonoBehaviour
 	public static List<Transform> ASTEROIDS = new List<Transform> ();
 	public static List<Vector3> SPAWNGRID = new List<Vector3> ();
 	
-	public GameObject prefab;
-	public float spawnTime;
+//	public GameObject prefab;
+	public List<GameObject> prefabs;
+	public float spawnTimeMin;
+	public float spawnTimeMax;
 	private float timeToSpawn;
 	float _nearCheckDistance = 2f;
 	
@@ -31,13 +33,14 @@ public class AsteroidSpawner : MonoBehaviour
 		
 		if (timeToSpawn <= 0) {
 			ASTEROIDS.RemoveAll (x => x == null);
+			int rndPrefabs = Random.Range (0, prefabs.Count);
 			if (haveEmptyArea ()) {
-				GameObject go = (GameObject)Instantiate (prefab, getEmptyArea (), Quaternion.identity);
+				GameObject go = (GameObject)Instantiate (prefabs[rndPrefabs], getEmptyArea (), Quaternion.identity);
 				ASTEROIDS.Add (go.transform);
 			} else {
 				print ("No empty space, asteroids count : " + ASTEROIDS.Count);
 			}
-			timeToSpawn = spawnTime;
+			timeToSpawn = Random.Range(spawnTimeMin, spawnTimeMax);
 		}
 	}
 

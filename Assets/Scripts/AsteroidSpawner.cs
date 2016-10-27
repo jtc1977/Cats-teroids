@@ -14,6 +14,10 @@ public class AsteroidSpawner : MonoBehaviour
 	public float spawnTimeMax;
 	private float timeToSpawn;
 	float _nearCheckDistance = 2f;
+
+	//number of asteroids left to spawn
+	public int Pool = 0;
+	public float SpeedMultiplier = 1f;
 	
 	// Use this for initialization
 	void Start ()
@@ -30,18 +34,21 @@ public class AsteroidSpawner : MonoBehaviour
 			return;
 		
 		timeToSpawn -= Time.deltaTime;
-		
-		if (timeToSpawn <= 0) {
-			ASTEROIDS.RemoveAll (x => x == null);
-			int rndPrefabs = Random.Range (0, prefabs.Count);
-			if (haveEmptyArea ()) {
-				GameObject go = (GameObject)Instantiate (prefabs[rndPrefabs], getEmptyArea (), Quaternion.identity);
-				ASTEROIDS.Add (go.transform);
-			} else {
-				print ("No empty space, asteroids count : " + ASTEROIDS.Count);
+
+//		if (Pool > 0) {
+			if (timeToSpawn <= 0) {
+				ASTEROIDS.RemoveAll (x => x == null);
+				int rndPrefabs = Random.Range (0, prefabs.Count);
+				if (haveEmptyArea ()) {
+					GameObject go = (GameObject)Instantiate (prefabs [rndPrefabs], getEmptyArea (), Quaternion.identity);
+					ASTEROIDS.Add (go.transform);
+//					Pool--;
+				} else {
+					print ("No empty space, asteroids count : " + ASTEROIDS.Count);
+				}
+				timeToSpawn = Random.Range (spawnTimeMin, spawnTimeMax);
 			}
-			timeToSpawn = Random.Range(spawnTimeMin, spawnTimeMax);
-		}
+//		}
 	}
 
 	/// <summary>

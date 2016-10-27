@@ -8,7 +8,7 @@ public class PlayerSpawner : MonoBehaviour
 	//how long does it take to respawn player?
 	[SerializeField] float _respawnTimer = 2f;
 	float respawnTimerCounter;
-	
+
 	// Use this for initialization
 	void Start ()
 	{

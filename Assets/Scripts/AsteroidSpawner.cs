@@ -12,6 +12,8 @@ public class AsteroidSpawner : MonoBehaviour
 	public List<GameObject> prefabs;
 	public float spawnTimeMin;
 	public float spawnTimeMax;
+	float spawnTimeMinOrigin;
+	float spawnTimeMaxOrigin;
 	private float timeToSpawn;
 	float _nearCheckDistance = 2f;
 
@@ -24,6 +26,9 @@ public class AsteroidSpawner : MonoBehaviour
 	{
 		timeToSpawn = 0f;
 
+		spawnTimeMaxOrigin = spawnTimeMax;
+		spawnTimeMinOrigin = spawnTimeMin;
+
 		setSpawnGrid (20);
 	}
 	
@@ -33,22 +38,29 @@ public class AsteroidSpawner : MonoBehaviour
 		if (GameController.GC.GetIsPaused ())
 			return;
 		
-		timeToSpawn -= Time.deltaTime;
-
 //		if (Pool > 0) {
+		if (Pool > 0) {
+			timeToSpawn -= Time.deltaTime;
 			if (timeToSpawn <= 0) {
 				ASTEROIDS.RemoveAll (x => x == null);
 				int rndPrefabs = Random.Range (0, prefabs.Count);
 				if (haveEmptyArea ()) {
 					GameObject go = (GameObject)Instantiate (prefabs [rndPrefabs], getEmptyArea (), Quaternion.identity);
 					ASTEROIDS.Add (go.transform);
-//					Pool--;
+					Pool--;
+					AsteroidMovementHandler amh = go.GetComponent<AsteroidMovementHandler> ();
+					amh.speed = SpeedMultiplier;
 				} else {
 					print ("No empty space, asteroids count : " + ASTEROIDS.Count);
 				}
 				timeToSpawn = Random.Range (spawnTimeMin, spawnTimeMax);
 			}
-//		}
+		} else if (ASTEROIDS.Count <= 0) {
+			LevelController.LC.LevelComplete ();
+		} else {
+			ASTEROIDS.RemoveAll (x => x == null);
+		}
+//		print (ASTEROIDS.Count);
 	}
 
 	/// <summary>
@@ -122,11 +134,11 @@ public class AsteroidSpawner : MonoBehaviour
 	{
 		//starts from bottom left corner(0,0)
 		int widthMax = Screen.width;
-		int heightMax = Screen.height;
+		int heightMax = Screen.height + 100;
 		int widthMin = 0;
 
 		//all width, two third of height from top to bottom is the spawn area
-		int heightMin = (int)((float)Screen.height / 1.2f);
+		int heightMin = (int)((float)Screen.height / 1.1f);
 
 		int width = widthMax - widthMin;
 		int height = heightMax - heightMin;
@@ -147,5 +159,10 @@ public class AsteroidSpawner : MonoBehaviour
 				SPAWNGRID.Add (gridPoint);
 			}
 		}
+	}
+
+	public void ResetSpawnTimes(){
+		spawnTimeMax = spawnTimeMaxOrigin;
+		spawnTimeMin = spawnTimeMinOrigin;
 	}
 }

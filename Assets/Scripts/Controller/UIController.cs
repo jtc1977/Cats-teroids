@@ -14,6 +14,7 @@ public class UIController : MonoBehaviour {
 	[SerializeField] Text TextScore;
 	[SerializeField] Text TextGameOver;
 	[SerializeField] Text TextRestart;
+	[SerializeField] Text TextStatus;
 
 	public UIBulletDisplayHandler UIBDH;
 
@@ -30,6 +31,7 @@ public class UIController : MonoBehaviour {
 		SetScore (GameController.GC.GetScore ());
 		TextGameOver.text = "";
 		TextRestart.text = "";
+		TextStatus.text = "";
 	}
 	public void SetLife(int newLife){
 		TextLife.text = "LIVES : " + newLife;
@@ -48,6 +50,9 @@ public class UIController : MonoBehaviour {
 		//Duke 8/2/2016
 		//Note : I think I ran into singleton instance remaining as if this gameobject is called with DontDestroyOnLoad,
 		//But does not replicate here. So if problem shows, handle here by destroying old instance, if not, ignore or delete this.
+	}
+	public void SetStatusText(string newText){
+		TextStatus.text = newText;
 	}
 
 	//for test

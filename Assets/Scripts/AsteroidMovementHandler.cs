@@ -11,7 +11,25 @@ public class AsteroidMovementHandler : MonoBehaviour {
 
 	void Start () {
 		//GetComponent<Rigidbody2D>();
+//		initialize();
+	}
+	public void Initialize(){
 		GetComponent<Rigidbody2D>().velocity = Vector3.down * Random.Range(0.5f, speed);
+	}
+
+	public void Initialize(DIRECTION dir){
+		Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
+		if (dir == DIRECTION.RIGHT) {
+			currVel.x = Random.Range (speed * 0.4f, speed * 0.6f);
+			currVel.y = -speed * 0.3f;
+			currVel = currVel.normalized * speed;
+		} else {
+			currVel.x = Random.Range (-speed * 0.6f, -speed * 0.4f);
+			currVel.y = -speed * 0.3f;
+			currVel = currVel.normalized * speed;
+		}
+		//apply velocity
+		GetComponent<Rigidbody2D> ().velocity = currVel;
 	}
 	
 	void Update () {

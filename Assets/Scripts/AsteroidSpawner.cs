@@ -50,6 +50,7 @@ public class AsteroidSpawner : MonoBehaviour
 					Pool--;
 					AsteroidMovementHandler amh = go.GetComponent<AsteroidMovementHandler> ();
 					amh.speed = SpeedMultiplier;
+					amh.Initialize ();
 				} else {
 					print ("No empty space, asteroids count : " + ASTEROIDS.Count);
 				}

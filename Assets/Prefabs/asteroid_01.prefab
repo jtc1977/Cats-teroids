@@ -198,6 +198,7 @@ MonoBehaviour:
   _health: 1
   _explosionPrefab: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
   scoreValue: 10
+  _splitAsteroids: {fileID: 120572, guid: 6cfe01cddc7181043a6726ba5f7879dd, type: 2}
 --- !u!212 &21216276
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,6 +16,7 @@ GameObject:
   - 82: {fileID: 8226424}
   - 114: {fileID: 11434086}
   - 58: {fileID: 58000011877544854}
+  - 95: {fileID: 95000012131227606}
   m_Layer: 8
   m_Name: Cat_02
   m_TagString: Untagged
@@ -430,3 +431,20 @@ CircleCollider2D:
   m_Offset: {x: -0.24, y: 0.4}
   serializedVersion: 2
   m_Radius: 1.45
+--- !u!95 &95000012131227606
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f13d8ecc3cd449344a73cc47add3e7de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1

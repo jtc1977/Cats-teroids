@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class LevelController : MonoBehaviour
 {
 	public static LevelController LC;
-
 	[SerializeField] AsteroidSpawner _as;
+	[SerializeField] List<GameObject> _splitAsteroids = new List<GameObject>();
 	[SerializeField] int _massWaveIntervalMin = 1;
 	[SerializeField] int _massWaveIntervalMax = 4;
 	[SerializeField] int _difficulty = 1;
 	int _asteroidCnt = 5;
-//	float _asteroidSpdMultiplier = 1f;
+	//	float _asteroidSpdMultiplier = 1f;
 	[SerializeField] int _currentLevel = 1;
 	bool levelLoading = false;
 	string statusText = "";
@@ -40,7 +42,8 @@ public class LevelController : MonoBehaviour
 		}
 	}
 
-	void Update(){
+	void Update ()
+	{
 	}
 
 	public int GetCurrentLevel ()
@@ -48,7 +51,8 @@ public class LevelController : MonoBehaviour
 		return _currentLevel;
 	}
 
-	public void LevelComplete(float timerCount = 4f){
+	public void LevelComplete (float timerCount = 4f)
+	{
 		if (!levelLoading) {
 			_currentLevel++;
 			if (_currentLevel % Random.Range (3, 5) == 0) {
@@ -56,20 +60,22 @@ public class LevelController : MonoBehaviour
 				bossLevel = true;
 			} else {
 				bossLevel = false;
+				timerCount = 0f;
 			}
-			
-			StartCoroutine (IETimerCount (timerCount));
+
 			levelLoading = true;
+			StartCoroutine (IETimerCount (timerCount));
 		}
 	}
 
-	IEnumerator IETimerCount(float timerCount){
+	IEnumerator IETimerCount (float timerCount)
+	{
 		float timerOrigin = Time.time;
 		while (Time.time - timerOrigin < timerCount) {
-			statusText = "Level " + (_currentLevel - 1) + " Completed!\nNext round starts in " + (int)(timerCount - (Time.time - timerOrigin));
+//			statusText = "Level " + (_currentLevel - 1) + " Completed!\nNext round starts in " + (int)(timerCount - (Time.time - timerOrigin));
 
 			if (bossLevel)
-				statusText += "\nWARNING : MASS WAVE!";
+				statusText = "\nWARNING : MASS WAVE!";
 					
 			UIController.UIC.SetStatusText (statusText);
 			yield return null;
@@ -77,5 +83,26 @@ public class LevelController : MonoBehaviour
 		UIController.UIC.SetStatusText ("");
 		StartLevel (_currentLevel);
 		levelLoading = false;
+	}
+
+	public void Split (Vector3 position, float seconds)
+	{
+		StartCoroutine (IESplit (position, seconds));
+	}
+
+	IEnumerator IESplit(Vector3 position, float seconds){
+		yield return new WaitForSeconds (seconds);
+
+		//if splitable, make it split
+		int i = Random.Range(0, _splitAsteroids.Count);
+		GameObject go = Instantiate (_splitAsteroids.ElementAt(i));
+		go.GetComponent<AsteroidMovementHandler> ().Initialize (DIRECTION.LEFT);
+		go.transform.position = position;
+		AsteroidSpawner.ASTEROIDS.Add (go.transform);
+		i = Random.Range(0, _splitAsteroids.Count);
+		go = Instantiate (_splitAsteroids.ElementAt(i));
+		go.GetComponent<AsteroidMovementHandler> ().Initialize (DIRECTION.RIGHT);
+		go.transform.position = position;
+		AsteroidSpawner.ASTEROIDS.Add (go.transform);
 	}
 }

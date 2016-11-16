@@ -3703,6 +3703,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _as: {fileID: 17988733}
+  _splitAsteroids:
+  - {fileID: 161542, guid: f20af8f7ed72728479ce9e1549a9882c, type: 2}
+  - {fileID: 161542, guid: e5b9f154dcd953e41b45336cd2c5ba85, type: 2}
+  - {fileID: 161542, guid: 9f0536605e16d1c4a85e1a554f1aab37, type: 2}
+  - {fileID: 161542, guid: 80aa8dcf7b1e1904aab1c0922a2e6401, type: 2}
+  - {fileID: 161542, guid: 1e1de5bbedc0eb948853085467bf6430, type: 2}
+  - {fileID: 161542, guid: 77e29866cd9c6ad4a9ccf7daf4cfab73, type: 2}
+  - {fileID: 161542, guid: f3e2e41b167b0b347a865edf7ce78655, type: 2}
+  - {fileID: 161542, guid: 46ddccf919c80704aba780be0094692d, type: 2}
   _massWaveIntervalMin: 1
   _massWaveIntervalMax: 4
   _difficulty: 1

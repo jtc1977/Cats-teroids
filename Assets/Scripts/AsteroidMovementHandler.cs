@@ -7,11 +7,12 @@ public class AsteroidMovementHandler : MonoBehaviour {
 	public float rotSpeed = 90f;
 	public float speed;
 
-	float shipBoundaryRadius = 1f;
+	float shipBoundaryRadius = 0.5f;
 
 	void Start () {
 		//GetComponent<Rigidbody2D>();
-//		initialize();
+		//initialize();
+		transform.rotation = Quaternion.Euler( 0, 0, Random.Range(0f, 360f));
 	}
 	public void Initialize(){
 		GetComponent<Rigidbody2D>().velocity = Vector3.down * Random.Range(0.5f, speed);
@@ -75,9 +76,15 @@ public class AsteroidMovementHandler : MonoBehaviour {
 		// Now do horizontal bounds
 		if(pos.x+shipBoundaryRadius > widthOrtho) {
 			pos.x = widthOrtho - shipBoundaryRadius;
+			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
+			currVel.x = -currVel.x;
+			GetComponent<Rigidbody2D> ().velocity = currVel;
 		}
 		if(pos.x-shipBoundaryRadius < -widthOrtho) {
 			pos.x = -widthOrtho + shipBoundaryRadius;
+			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
+			currVel.x = -currVel.x;
+			GetComponent<Rigidbody2D> ().velocity = currVel;
 		}
 
 		// Finally, update our position!!

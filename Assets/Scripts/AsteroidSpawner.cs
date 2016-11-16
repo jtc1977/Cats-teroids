@@ -8,7 +8,7 @@ public class AsteroidSpawner : MonoBehaviour
 	public static List<Transform> ASTEROIDS = new List<Transform> ();
 	public static List<Vector3> SPAWNGRID = new List<Vector3> ();
 	
-//	public GameObject prefab;
+	//	public GameObject prefab;
 	public List<GameObject> prefabs;
 	public float spawnTimeMin;
 	public float spawnTimeMax;
@@ -20,6 +20,8 @@ public class AsteroidSpawner : MonoBehaviour
 	//number of asteroids left to spawn
 	public int Pool = 0;
 	public float SpeedMultiplier = 1f;
+//	float _asteroidCountTimer = 0f;
+//	bool _isAsteroidEmpty = false;
 	
 	// Use this for initialization
 	void Start ()
@@ -30,6 +32,8 @@ public class AsteroidSpawner : MonoBehaviour
 		spawnTimeMinOrigin = spawnTimeMin;
 
 		setSpawnGrid (20);
+
+//		_asteroidCountTimer = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -57,7 +61,13 @@ public class AsteroidSpawner : MonoBehaviour
 				timeToSpawn = Random.Range (spawnTimeMin, spawnTimeMax);
 			}
 		} else if (ASTEROIDS.Count <= 0) {
+//			if (!_isAsteroidEmpty) {
+//				_isAsteroidEmpty = true;
+//
+//			}
+
 			LevelController.LC.LevelComplete ();
+
 		} else {
 			ASTEROIDS.RemoveAll (x => x == null);
 		}
@@ -162,7 +172,8 @@ public class AsteroidSpawner : MonoBehaviour
 		}
 	}
 
-	public void ResetSpawnTimes(){
+	public void ResetSpawnTimes ()
+	{
 		spawnTimeMax = spawnTimeMaxOrigin;
 		spawnTimeMin = spawnTimeMinOrigin;
 	}

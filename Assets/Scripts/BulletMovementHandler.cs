@@ -43,9 +43,10 @@ public class BulletMovementHandler : MonoBehaviour
 		if (pos.x - shipBoundaryRadius < -widthOrtho) {
 			pos.x = -widthOrtho + shipBoundaryRadius;
 			Vector3 currVel = GetComponent<Rigidbody2D> ().velocity;
-			currVel.x = Random.Range (-2f, 2f);
-			currVel.y = 1.5f;
-			currVel = currVel.normalized * speed;
+			currVel.x = -currVel.x;
+//			currVel.x = Random.Range (-2f, 2f);
+//			currVel.y = 1.5f;
+//			currVel = currVel.normalized * speed;
 			GetComponent<Rigidbody2D> ().velocity = currVel;
 		}
 
@@ -129,6 +130,7 @@ public class BulletMovementHandler : MonoBehaviour
 					Mathf.Clamp (currVel.x, -maxXVel, -minXVel);
 					currVel = currVel.normalized * speed;	
 				}
+
 				//hit from the left, spin to the left
 				angularVel -= Random.Range(rotSpeed/ 3f, rotSpeed/ 2f);
 				Mathf.Clamp (angularVel, -rotSpeed, -rotSpeed / 3f);

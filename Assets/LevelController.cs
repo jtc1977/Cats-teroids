@@ -7,7 +7,7 @@ public class LevelController : MonoBehaviour
 {
 	public static LevelController LC;
 	[SerializeField] AsteroidSpawner _as;
-	[SerializeField] List<GameObject> _splitAsteroids = new List<GameObject>();
+	[SerializeField] List<GameObject> _splitAsteroids = new List<GameObject> ();
 	[SerializeField] int _massWaveIntervalMin = 1;
 	[SerializeField] int _massWaveIntervalMax = 4;
 	[SerializeField] int _difficulty = 1;
@@ -32,12 +32,13 @@ public class LevelController : MonoBehaviour
 	{
 		_currentLevel = levelToStart;
 		_as.Pool = (int)((1f + _currentLevel * 0.2f) * _asteroidCnt);
-//		_asteroidSpdMultiplier += 0.2f * _difficulty;
+		_as.SpeedMultiplier += 0.1f * _difficulty;
+		_as.ResetSpawnTimes ();
 
 		//boss levels
 		if (bossLevel) {
 			_as.spawnTimeMin = 0.1f;
-			_as.spawnTimeMax = 1f;
+			_as.spawnTimeMax = 0.75f;
 			_as.SpeedMultiplier += 0.2f * _difficulty;
 		}
 	}
@@ -55,7 +56,9 @@ public class LevelController : MonoBehaviour
 	{
 		if (!levelLoading) {
 			_currentLevel++;
-			if (_currentLevel % Random.Range (3, 5) == 0) {
+			//dev
+//			if (_currentLevel % Random.Range (3, 5) == 0) {
+			if (_currentLevel % 3 == 0) {
 //			if (_currentLevel % 2 == 0)
 				bossLevel = true;
 			} else {
@@ -90,17 +93,18 @@ public class LevelController : MonoBehaviour
 		StartCoroutine (IESplit (position, seconds));
 	}
 
-	IEnumerator IESplit(Vector3 position, float seconds){
+	IEnumerator IESplit (Vector3 position, float seconds)
+	{
 		yield return new WaitForSeconds (seconds);
 
 		//if splitable, make it split
-		int i = Random.Range(0, _splitAsteroids.Count);
-		GameObject go = Instantiate (_splitAsteroids.ElementAt(i));
+		int i = Random.Range (0, _splitAsteroids.Count);
+		GameObject go = Instantiate (_splitAsteroids.ElementAt (i));
 		go.GetComponent<AsteroidMovementHandler> ().Initialize (DIRECTION.LEFT);
 		go.transform.position = position;
 		AsteroidSpawner.ASTEROIDS.Add (go.transform);
-		i = Random.Range(0, _splitAsteroids.Count);
-		go = Instantiate (_splitAsteroids.ElementAt(i));
+		i = Random.Range (0, _splitAsteroids.Count);
+		go = Instantiate (_splitAsteroids.ElementAt (i));
 		go.GetComponent<AsteroidMovementHandler> ().Initialize (DIRECTION.RIGHT);
 		go.transform.position = position;
 		AsteroidSpawner.ASTEROIDS.Add (go.transform);

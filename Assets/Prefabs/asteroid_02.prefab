@@ -9,11 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 497876}
   - 212: {fileID: 21270592}
-  - 60: {fileID: 6051642}
   - 50: {fileID: 5024406}
   - 114: {fileID: 11465562}
   - 114: {fileID: 11475388}
   - 114: {fileID: 11454626}
+  - 58: {fileID: 58000010656992334}
   m_Layer: 9
   m_Name: asteroid_02
   m_TagString: Asteroid
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 195984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.23238307, y: 0.23238307, z: 0.23238307}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,110 +51,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &6051642
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195984}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 1.03, y: -1.91}
-      - {x: 1.23, y: -1.79}
-      - {x: 1.45, y: -1.64}
-      - {x: 1.58, y: -1.54}
-      - {x: 1.7, y: -1.44}
-      - {x: 2.02, y: -1.12}
-      - {x: 2.09, y: -1.04}
-      - {x: 2.23, y: -0.87}
-      - {x: 2.33, y: -0.72}
-      - {x: 2.45, y: -0.48}
-      - {x: 2.5, y: -0.36}
-      - {x: 2.55, y: -0.17}
-      - {x: 2.57, y: -0.04}
-      - {x: 2.57, y: 0.2}
-      - {x: 2.56, y: 0.28}
-      - {x: 2.52, y: 0.45}
-      - {x: 2.42, y: 0.74}
-      - {x: 2.36, y: 0.95}
-      - {x: 2.26, y: 1.28}
-      - {x: 2.24, y: 1.39}
-      - {x: 2.16, y: 1.62}
-      - {x: 2.06, y: 1.81}
-      - {x: 2.02, y: 1.87}
-      - {x: 1.83, y: 2.05}
-      - {x: 1.73, y: 2.09}
-      - {x: 1.6, y: 2.13}
-      - {x: 1.49, y: 2.14}
-      - {x: 1.11, y: 2.14}
-      - {x: 0.96, y: 2.12}
-      - {x: 0.83, y: 2.09}
-      - {x: 0.64, y: 2.03}
-      - {x: 0.53, y: 1.96}
-      - {x: 0.1, y: 2.04}
-      - {x: -0.17, y: 2.03}
-      - {x: -0.27, y: 2}
-      - {x: -0.4, y: 1.96}
-      - {x: -0.5, y: 1.91}
-      - {x: -0.56, y: 1.87}
-      - {x: -0.65, y: 1.78}
-      - {x: -0.79, y: 1.62}
-      - {x: -0.93, y: 1.6}
-      - {x: -1.07, y: 1.56}
-      - {x: -1.19, y: 1.46}
-      - {x: -1.33, y: 1.47}
-      - {x: -1.49, y: 1.47}
-      - {x: -1.71, y: 1.34}
-      - {x: -2.01, y: 1.12}
-      - {x: -2.18, y: 0.97}
-      - {x: -2.38, y: 0.77}
-      - {x: -2.47, y: 0.66}
-      - {x: -2.54, y: 0.56}
-      - {x: -2.59, y: 0.44}
-      - {x: -2.6, y: 0.35}
-      - {x: -2.6, y: 0.32}
-      - {x: -2.58, y: 0.23}
-      - {x: -2.55, y: 0.14}
-      - {x: -2.48, y: 0}
-      - {x: -2.43, y: -0.06}
-      - {x: -2.46, y: -0.11}
-      - {x: -2.49, y: -0.2}
-      - {x: -2.5, y: -0.29}
-      - {x: -2.48, y: -0.4}
-      - {x: -2.4, y: -0.49}
-      - {x: -2.32, y: -0.54}
-      - {x: -2.32, y: -0.59}
-      - {x: -2.26, y: -0.85}
-      - {x: -2.17, y: -0.98}
-      - {x: -2.07, y: -1.04}
-      - {x: -1.91, y: -1.13}
-      - {x: -1.72, y: -1.24}
-      - {x: -1.71, y: -1.32}
-      - {x: -1.69, y: -1.41}
-      - {x: -1.65, y: -1.53}
-      - {x: -1.62, y: -1.59}
-      - {x: -1.54, y: -1.68}
-      - {x: -1.41, y: -1.74}
-      - {x: -1.21, y: -1.76}
-      - {x: -0.97, y: -1.8}
-      - {x: -0.72, y: -1.82}
-      - {x: -0.51, y: -1.94}
-      - {x: -0.42, y: -2.06}
-      - {x: -0.34, y: -2.09}
-      - {x: -0.29, y: -2.09}
-      - {x: -0.13, y: -2.1}
-      - {x: 0.02, y: -2.1}
-      - {x: 0.19, y: -2.14}
-      - {x: 0.44, y: -2.14}
-      - {x: 0.49, y: -2.13}
-      - {x: 0.68, y: -2.07}
-      - {x: 0.8, y: -2.02}
 --- !u!114 &11454626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,7 +121,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2044182155
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bf361715753092846bf9ebb7180000a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa80303adabb5344885b719b347ec97d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -292,3 +188,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 195984}
   m_IsPrefabParent: 1
+--- !u!58 &58000010656992334
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4863

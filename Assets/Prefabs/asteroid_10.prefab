@@ -9,11 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 472964}
   - 212: {fileID: 21252432}
-  - 60: {fileID: 6082078}
   - 50: {fileID: 5095978}
   - 114: {fileID: 11494690}
   - 114: {fileID: 11442076}
   - 114: {fileID: 11417470}
+  - 58: {fileID: 58000011748257370}
   m_Layer: 9
   m_Name: asteroid_10
   m_TagString: Asteroid
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 170212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,62 +51,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &6082078
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170212}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.52, y: -0.79}
-      - {x: 0.62, y: -0.72}
-      - {x: 0.75, y: -0.41}
-      - {x: 0.84, y: -0.34}
-      - {x: 1.07, y: -0.16}
-      - {x: 1.12, y: -0.1}
-      - {x: 1.2, y: 0.07}
-      - {x: 1.22, y: 0.15}
-      - {x: 1.22, y: 0.36}
-      - {x: 1.19, y: 0.49}
-      - {x: 1.05, y: 0.59}
-      - {x: 0.87, y: 0.66}
-      - {x: 0.85, y: 0.76}
-      - {x: 0.68, y: 0.89}
-      - {x: 0.2, y: 0.99}
-      - {x: 0.05, y: 1.06}
-      - {x: -0.19, y: 1.12}
-      - {x: -0.39, y: 1.12}
-      - {x: -0.43, y: 1.09}
-      - {x: -0.46, y: 1.07}
-      - {x: -0.53, y: 1.02}
-      - {x: -0.58, y: 0.9}
-      - {x: -0.59, y: 0.67}
-      - {x: -1.06, y: 0.56}
-      - {x: -1.14, y: 0.53}
-      - {x: -1.21, y: 0.46}
-      - {x: -1.27, y: 0.33}
-      - {x: -1.27, y: 0.22}
-      - {x: -1.16, y: 0.04}
-      - {x: -0.99, y: -0.01}
-      - {x: -0.95, y: -0.17}
-      - {x: -0.88, y: -0.57}
-      - {x: -0.83, y: -0.77}
-      - {x: -0.77, y: -0.86}
-      - {x: -0.7, y: -0.93}
-      - {x: -0.38, y: -1.09}
-      - {x: -0.25, y: -1.14}
-      - {x: -0.21, y: -1.15}
-      - {x: -0.13, y: -1.15}
-      - {x: -0.07, y: -1.12}
-      - {x: 0.23, y: -0.83}
-      - {x: 0.34, y: -0.77}
 --- !u!114 &11417470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,6 +65,7 @@ MonoBehaviour:
   _health: 1
   _explosionPrefab: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
   scoreValue: 10
+  _isSplitable: 0
 --- !u!114 &11442076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,7 +121,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2044182155
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dccca2197c2c56f42b58b0292cf0bde0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71fc7efd67d861146b5df20bbb830f3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -255,3 +200,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170212}
   m_IsPrefabParent: 1
+--- !u!58 &58000011748257370
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.536

@@ -1,11 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.WindowsWebPlayer" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LevelController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\UIBulletDisplayHandler.cs">
     <Files>
-      <File FileName="Assets\LevelController.cs" Line="31" Column="43" />
-      <File FileName="Assets\Scripts\AsteroidStatusHandler.cs" Line="18" Column="27" />
-      <File FileName="Assets\Scripts\AsteroidSpawner.cs" Line="175" Column="29" />
-      <File FileName="Assets\Scripts\Controller\GameController.cs" Line="50" Column="5" />
+      <File FileName="Assets\UIBulletDisplayHandler.cs" Line="11" Column="25" />
+      <File FileName="Assets\Scripts\PlayerShooting.cs" Line="36" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

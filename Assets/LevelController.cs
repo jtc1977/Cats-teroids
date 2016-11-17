@@ -59,7 +59,6 @@ public class LevelController : MonoBehaviour
 			//dev
 //			if (_currentLevel % Random.Range (3, 5) == 0) {
 			if (_currentLevel % 3 == 0) {
-//			if (_currentLevel % 2 == 0)
 				bossLevel = true;
 			} else {
 				bossLevel = false;

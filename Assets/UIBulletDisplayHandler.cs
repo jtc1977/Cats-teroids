@@ -13,14 +13,13 @@ public class UIBulletDisplayHandler : MonoBehaviour {
 		CatUIList [currentCat].SetActive (true);
 	}
 
-	public void SwitchCat(){
+	public void SwitchCat(int _catIndex){
 		foreach (var go in CatUIList) {
 			go.SetActive (false);
 		}
-		currentCat++;
-		if(currentCat >= CatUIList.Count)
-			currentCat = 0;
-
-		CatUIList [currentCat].SetActive (true);
+//		currentCat++;
+//		if(currentCat >= CatUIList.Count)
+//			currentCat = 0;
+		CatUIList [_catIndex].SetActive (true);
 	}
 }

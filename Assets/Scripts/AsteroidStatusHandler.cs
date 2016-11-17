@@ -6,6 +6,10 @@ public class AsteroidStatusHandler : ObjectStatusHandler
 	[SerializeField] GameObject _explosionPrefab;
 	[SerializeField] int scoreValue;
 	[SerializeField] bool _isSplitable = false;
+	[SerializeField] int _damageToEarth = 1;
+	public int GetDamageToEarth(){
+		return _damageToEarth;
+	}
 
 
 	public override void Die ()

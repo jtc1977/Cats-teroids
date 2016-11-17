@@ -13,6 +13,7 @@ public class PlayerShooting : MonoBehaviour
 	/// Current catbullet type id(index)
 	/// </summary>
 	int _currentCatBulletNum = 0;
+//	CAT_TYPE _currentCatType;
 	public float fireDelay = 0.25f;
 	float fireCooldownTimer = 0;
 
@@ -33,7 +34,7 @@ public class PlayerShooting : MonoBehaviour
 				_currentCatBulletNum++;
 				if(_currentCatBulletNum >= _catBulletPrefabs.Count)
 					_currentCatBulletNum = 0;
-				UIController.UIC.UIBDH.SwitchCat ();
+				UIController.UIC.UIBDH.SwitchCat (_currentCatBulletNum);
 			}
 		}
 	}
@@ -57,3 +58,8 @@ public class PlayerShooting : MonoBehaviour
 		fireCooldownTimer = newTimer;
 	}
 }
+//public enum CAT_TYPE{
+//	DEFAULT = 0,
+//	BLUE,
+//	EVIL_CAT_EVIL,
+//};

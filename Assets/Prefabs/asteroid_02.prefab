@@ -66,6 +66,7 @@ MonoBehaviour:
   _explosionPrefab: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
   scoreValue: 10
   _isSplitable: 1
+  _damageToEarth: 3
 --- !u!114 &11465562
 MonoBehaviour:
   m_ObjectHideFlags: 1

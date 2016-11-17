@@ -13,11 +13,11 @@ public class PlanetStatusHandler : ObjectStatusHandler {
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		if (other.CompareTag (TagHelper.ASTEROIRD)) {
-			ObjectStatusHandler osh = other.GetComponent<ObjectStatusHandler> ();
-			if (osh) {
-				osh.Die ();
+			AsteroidStatusHandler ash = other.GetComponent<AsteroidStatusHandler> ();
+			if (ash) {
+				ash.Die ();
 			}
-			SubtractHealth (1);
+			SubtractHealth (ash.GetDamageToEarth());
 		}
 	}
 	public override void SubtractHealth (int amount)

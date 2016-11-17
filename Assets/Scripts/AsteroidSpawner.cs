@@ -32,7 +32,6 @@ public class AsteroidSpawner : MonoBehaviour
 		spawnTimeMinOrigin = spawnTimeMin;
 
 		setSpawnGrid (20);
-
 //		_asteroidCountTimer = Time.time;
 	}
 	
@@ -63,11 +62,8 @@ public class AsteroidSpawner : MonoBehaviour
 		} else if (ASTEROIDS.Count <= 0) {
 //			if (!_isAsteroidEmpty) {
 //				_isAsteroidEmpty = true;
-//
 //			}
-
 			LevelController.LC.LevelComplete ();
-
 		} else {
 			ASTEROIDS.RemoveAll (x => x == null);
 		}
@@ -159,7 +155,6 @@ public class AsteroidSpawner : MonoBehaviour
 
 		int widthGridCount = width / widthGridSize;
 		int heightGridCount = height / heightGridSize;
-
 
 		SPAWNGRID.Clear ();
 

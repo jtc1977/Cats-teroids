@@ -126,3 +126,8 @@ public class InputController : MonoBehaviour
 		return InputX;
 	}
 }
+public enum CANNON_CONTROL_TYPE{
+	TOUCH_DRAG,
+	TOUCH_AREA,
+	ACCLEROMETER,
+}

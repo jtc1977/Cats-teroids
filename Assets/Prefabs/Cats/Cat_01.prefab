@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 5
+  _maxHelath: 5
 --- !u!114 &11434086
 MonoBehaviour:
   m_ObjectHideFlags: 1

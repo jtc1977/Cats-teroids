@@ -63,6 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 1
+  _maxHelath: 1
   _explosionPrefab: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
   scoreValue: 10
   _isSplitable: 1

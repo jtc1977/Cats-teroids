@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\AsteroidStatusHandler.cs" />
      <Compile Include="Assets\Scripts\BulletMovementHandler.cs" />
      <Compile Include="Assets\Scripts\CannonMove.cs" />
+     <Compile Include="Assets\Scripts\CannonStatusHandler.cs" />
      <Compile Include="Assets\Scripts\CombatHandler.cs" />
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\InputController.cs" />

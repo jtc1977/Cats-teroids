@@ -1,0 +1,745 @@
+fileFormatVersion: 2
+guid: 7b15777a0aa19b74784ee22f760f8a75
+timeCreated: 1479932856
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cannon02_SpriteSheet_0
+    21300002: Cannon02_SpriteSheet_1
+    21300004: Cannon02_SpriteSheet_2
+    21300006: Cannon02_SpriteSheet_3
+    21300008: Cannon02_SpriteSheet_4
+    21300010: Cannon02_SpriteSheet_5
+    21300012: Cannon02_SpriteSheet_6
+    21300014: Cannon02_SpriteSheet_7
+    21300016: Cannon02_SpriteSheet_8
+    21300018: Cannon02_SpriteSheet_9
+    21300020: Cannon02_SpriteSheet_10
+    21300022: Cannon02_SpriteSheet_11
+    21300024: Cannon02_SpriteSheet_12
+    21300026: Cannon02_SpriteSheet_13
+    21300028: Cannon02_SpriteSheet_14
+    21300030: Cannon02_SpriteSheet_15
+    21300032: Cannon02_SpriteSheet_16
+    21300034: Cannon02_SpriteSheet_17
+    21300036: Cannon02_SpriteSheet_18
+    21300038: Cannon02_SpriteSheet_19
+    21300040: Cannon02_SpriteSheet_20
+    21300042: Cannon02_SpriteSheet_21
+    21300044: Cannon02_SpriteSheet_22
+    21300046: Cannon02_SpriteSheet_23
+    21300048: Cannon02_SpriteSheet_24
+    21300050: Cannon02_SpriteSheet_25
+    21300052: Cannon02_SpriteSheet_26
+    21300054: Cannon02_SpriteSheet_27
+    21300056: Cannon02_SpriteSheet_28
+    21300058: Cannon02_SpriteSheet_29
+    21300060: Cannon02_SpriteSheet_30
+    21300062: Cannon02_SpriteSheet_31
+    21300064: Cannon02_SpriteSheet_32
+    21300066: Cannon02_SpriteSheet_33
+    21300068: Cannon02_SpriteSheet_34
+    21300070: Cannon02_SpriteSheet_35
+    21300072: Cannon02_SpriteSheet_36
+    21300074: Cannon02_SpriteSheet_37
+    21300076: Cannon02_SpriteSheet_38
+    21300078: Cannon02_SpriteSheet_39
+    21300080: Cannon02_SpriteSheet_40
+    21300082: Cannon02_SpriteSheet_41
+    21300084: Cannon02_SpriteSheet_42
+    21300086: Cannon02_SpriteSheet_43
+    21300088: Cannon02_SpriteSheet_44
+    21300090: Cannon02_SpriteSheet_45
+    21300092: Cannon02_SpriteSheet_46
+    21300094: Cannon02_SpriteSheet_47
+    21300096: Cannon02_SpriteSheet_48
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5496
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 5496
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 5496
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 5496
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 5496
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 5496
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 5496
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4580
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 4580
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 4580
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 4580
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 4580
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 4580
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 4580
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3664
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 3664
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 3664
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 3664
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 3664
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 3664
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 3664
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2748
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 2748
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 2748
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 2748
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 2748
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 2748
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 2748
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1832
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1832
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1832
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1832
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1832
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 1832
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 1832
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 916
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 916
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 916
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 916
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 916
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 916
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 916
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 0
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 0
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 0
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 0
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cannon02_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 0
+        width: 472
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

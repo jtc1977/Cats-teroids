@@ -60,6 +60,7 @@ GameObject:
   - 114: {fileID: 114000013696486170}
   - 114: {fileID: 114000013712398518}
   - 114: {fileID: 114000010524116178}
+  - 95: {fileID: 95000011681958826}
   m_Layer: 8
   m_Name: SpaceCannon02(new)
   m_TagString: Player
@@ -190,6 +191,23 @@ PolygonCollider2D:
       - {x: 0.375, y: -2.53}
       - {x: 0.475, y: -2.36}
       - {x: 0.565, y: -2.33}
+--- !u!95 &95000011681958826
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012083509442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f6715c4088c23042be2b3a965dc195f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114000010524116178
 MonoBehaviour:
   m_ObjectHideFlags: 1

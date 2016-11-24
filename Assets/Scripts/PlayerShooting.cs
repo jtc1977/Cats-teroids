@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,6 +6,7 @@ public class PlayerShooting : MonoBehaviour
 {
 	public static int LAST_SHOT_FRAME = 0;
 	public static GameObject LastFiredBullet;
+    private Animator myAnim;
 
 	public Vector3 offset = new Vector3 (0, .75f, 0);
 	[SerializeField] List<GameObject> _catBulletPrefabs = new List<GameObject>();
@@ -17,6 +18,10 @@ public class PlayerShooting : MonoBehaviour
 	public float fireDelay = 0.25f;
 	float fireCooldownTimer = 0;
 
+    void Start(){
+        myAnim=GetComponent<Animator>();
+        
+    }
 
 	// Update is called once per frame
 	void Update ()
@@ -25,8 +30,11 @@ public class PlayerShooting : MonoBehaviour
 
 		if (!GameController.GC.GetIsPaused ()) {
 			if (InputController.IC.GetFire (transform.position)) {
-				Fire ();
+				myAnim.SetTrigger("Fire");
+               // Fire ();
+                //moved fire function call to animation event
 //				Debug.Break ();
+                
 			}	
 			//dev only
 			if (Input.GetKeyDown (KeyCode.Tab)) {

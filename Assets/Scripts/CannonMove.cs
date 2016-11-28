@@ -4,14 +4,14 @@ using System.Collections;
 public class CannonMove : MonoBehaviour
 {
 	public float paddleSpeed = 1f;
-	private Vector3 playerPos = new Vector3 (0, -3.74f, 0);
+	private Vector3 playerPos = new Vector3 (0, -3.25f, 0);
 	float shipBoundaryRadius = 1f;
 
 	void FixedUpdate ()
 	{
 		float xPos = InputController.IC.GetHorizontalInput (transform.position.x, paddleSpeed);
 
-		playerPos = new Vector3 (Mathf.Clamp (xPos, -8f, 8f), -3.74f, 0f);
+		playerPos = new Vector3 (Mathf.Clamp (xPos, -8f, 8f), -3.25f, 0f);
 		transform.position = playerPos;
 
 		Vector3 pos = transform.position;

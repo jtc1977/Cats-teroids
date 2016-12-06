@@ -1,0 +1,899 @@
+fileFormatVersion: 2
+guid: 09231840726de9c4da48e7666a695ac1
+timeCreated: 1480997968
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat03_hair_spriteSheet_0
+    21300002: Cat03_hair_spriteSheet_1
+    21300004: Cat03_hair_spriteSheet_2
+    21300006: Cat03_hair_spriteSheet_3
+    21300008: Cat03_hair_spriteSheet_4
+    21300010: Cat03_hair_spriteSheet_5
+    21300012: Cat03_hair_spriteSheet_6
+    21300014: Cat03_hair_spriteSheet_7
+    21300016: Cat03_hair_spriteSheet_8
+    21300018: Cat03_hair_spriteSheet_9
+    21300020: Cat03_hair_spriteSheet_10
+    21300022: Cat03_hair_spriteSheet_11
+    21300024: Cat03_hair_spriteSheet_12
+    21300026: Cat03_hair_spriteSheet_13
+    21300028: Cat03_hair_spriteSheet_14
+    21300030: Cat03_hair_spriteSheet_15
+    21300032: Cat03_hair_spriteSheet_16
+    21300034: Cat03_hair_spriteSheet_17
+    21300036: Cat03_hair_spriteSheet_18
+    21300038: Cat03_hair_spriteSheet_19
+    21300040: Cat03_hair_spriteSheet_20
+    21300042: Cat03_hair_spriteSheet_21
+    21300044: Cat03_hair_spriteSheet_22
+    21300046: Cat03_hair_spriteSheet_23
+    21300048: Cat03_hair_spriteSheet_24
+    21300050: Cat03_hair_spriteSheet_25
+    21300052: Cat03_hair_spriteSheet_26
+    21300054: Cat03_hair_spriteSheet_27
+    21300056: Cat03_hair_spriteSheet_28
+    21300058: Cat03_hair_spriteSheet_29
+    21300060: Cat03_hair_spriteSheet_30
+    21300062: Cat03_hair_spriteSheet_31
+    21300064: Cat03_hair_spriteSheet_32
+    21300066: Cat03_hair_spriteSheet_33
+    21300068: Cat03_hair_spriteSheet_34
+    21300070: Cat03_hair_spriteSheet_35
+    21300072: Cat03_hair_spriteSheet_36
+    21300074: Cat03_hair_spriteSheet_37
+    21300076: Cat03_hair_spriteSheet_38
+    21300078: Cat03_hair_spriteSheet_39
+    21300080: Cat03_hair_spriteSheet_40
+    21300082: Cat03_hair_spriteSheet_41
+    21300084: Cat03_hair_spriteSheet_42
+    21300086: Cat03_hair_spriteSheet_43
+    21300088: Cat03_hair_spriteSheet_44
+    21300090: Cat03_hair_spriteSheet_45
+    21300092: Cat03_hair_spriteSheet_46
+    21300094: Cat03_hair_spriteSheet_47
+    21300096: Cat03_hair_spriteSheet_48
+    21300098: Cat03_hair_spriteSheet_49
+    21300100: Cat03_hair_spriteSheet_50
+    21300102: Cat03_hair_spriteSheet_51
+    21300104: Cat03_hair_spriteSheet_52
+    21300106: Cat03_hair_spriteSheet_53
+    21300108: Cat03_hair_spriteSheet_54
+    21300110: Cat03_hair_spriteSheet_55
+    21300112: Cat03_hair_spriteSheet_56
+    21300114: Cat03_hair_spriteSheet_57
+    21300116: Cat03_hair_spriteSheet_58
+    21300118: Cat03_hair_spriteSheet_59
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 6111
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 5238
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 4365
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 3492
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 2619
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 1746
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 873
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 0
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cat03_hair_spriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 568
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

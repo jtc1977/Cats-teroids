@@ -1,69 +1,69 @@
 fileFormatVersion: 2
-guid: 26beedc5e7511c94bbea3734bd2881a8
-timeCreated: 1480804974
+guid: 84db30d00d4f25140992450c7a0ba1a9
+timeCreated: 1480998025
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Cat03_SpriteSheet_v1_0
-    21300002: Cat03_SpriteSheet_v1_1
-    21300004: Cat03_SpriteSheet_v1_2
-    21300006: Cat03_SpriteSheet_v1_3
-    21300008: Cat03_SpriteSheet_v1_4
-    21300010: Cat03_SpriteSheet_v1_5
-    21300012: Cat03_SpriteSheet_v1_6
-    21300014: Cat03_SpriteSheet_v1_7
-    21300016: Cat03_SpriteSheet_v1_8
-    21300018: Cat03_SpriteSheet_v1_9
-    21300020: Cat03_SpriteSheet_v1_10
-    21300022: Cat03_SpriteSheet_v1_11
-    21300024: Cat03_SpriteSheet_v1_12
-    21300026: Cat03_SpriteSheet_v1_13
-    21300028: Cat03_SpriteSheet_v1_14
-    21300030: Cat03_SpriteSheet_v1_15
-    21300032: Cat03_SpriteSheet_v1_16
-    21300034: Cat03_SpriteSheet_v1_17
-    21300036: Cat03_SpriteSheet_v1_18
-    21300038: Cat03_SpriteSheet_v1_19
-    21300040: Cat03_SpriteSheet_v1_20
-    21300042: Cat03_SpriteSheet_v1_21
-    21300044: Cat03_SpriteSheet_v1_22
-    21300046: Cat03_SpriteSheet_v1_23
-    21300048: Cat03_SpriteSheet_v1_24
-    21300050: Cat03_SpriteSheet_v1_25
-    21300052: Cat03_SpriteSheet_v1_26
-    21300054: Cat03_SpriteSheet_v1_27
-    21300056: Cat03_SpriteSheet_v1_28
-    21300058: Cat03_SpriteSheet_v1_29
-    21300060: Cat03_SpriteSheet_v1_30
-    21300062: Cat03_SpriteSheet_v1_31
-    21300064: Cat03_SpriteSheet_v1_32
-    21300066: Cat03_SpriteSheet_v1_33
-    21300068: Cat03_SpriteSheet_v1_34
-    21300070: Cat03_SpriteSheet_v1_35
-    21300072: Cat03_SpriteSheet_v1_36
-    21300074: Cat03_SpriteSheet_v1_37
-    21300076: Cat03_SpriteSheet_v1_38
-    21300078: Cat03_SpriteSheet_v1_39
-    21300080: Cat03_SpriteSheet_v1_40
-    21300082: Cat03_SpriteSheet_v1_41
-    21300084: Cat03_SpriteSheet_v1_42
-    21300086: Cat03_SpriteSheet_v1_43
-    21300088: Cat03_SpriteSheet_v1_44
-    21300090: Cat03_SpriteSheet_v1_45
-    21300092: Cat03_SpriteSheet_v1_46
-    21300094: Cat03_SpriteSheet_v1_47
-    21300096: Cat03_SpriteSheet_v1_48
-    21300098: Cat03_SpriteSheet_v1_49
-    21300100: Cat03_SpriteSheet_v1_50
-    21300102: Cat03_SpriteSheet_v1_51
-    21300104: Cat03_SpriteSheet_v1_52
-    21300106: Cat03_SpriteSheet_v1_53
-    21300108: Cat03_SpriteSheet_v1_54
-    21300110: Cat03_SpriteSheet_v1_55
-    21300112: Cat03_SpriteSheet_v1_56
-    21300114: Cat03_SpriteSheet_v1_57
-    21300116: Cat03_SpriteSheet_v1_58
-    21300118: Cat03_SpriteSheet_v1_59
+    21300000: Cat03_helmet_spriteSheet_0
+    21300002: Cat03_helmet_spriteSheet_1
+    21300004: Cat03_helmet_spriteSheet_2
+    21300006: Cat03_helmet_spriteSheet_3
+    21300008: Cat03_helmet_spriteSheet_4
+    21300010: Cat03_helmet_spriteSheet_5
+    21300012: Cat03_helmet_spriteSheet_6
+    21300014: Cat03_helmet_spriteSheet_7
+    21300016: Cat03_helmet_spriteSheet_8
+    21300018: Cat03_helmet_spriteSheet_9
+    21300020: Cat03_helmet_spriteSheet_10
+    21300022: Cat03_helmet_spriteSheet_11
+    21300024: Cat03_helmet_spriteSheet_12
+    21300026: Cat03_helmet_spriteSheet_13
+    21300028: Cat03_helmet_spriteSheet_14
+    21300030: Cat03_helmet_spriteSheet_15
+    21300032: Cat03_helmet_spriteSheet_16
+    21300034: Cat03_helmet_spriteSheet_17
+    21300036: Cat03_helmet_spriteSheet_18
+    21300038: Cat03_helmet_spriteSheet_19
+    21300040: Cat03_helmet_spriteSheet_20
+    21300042: Cat03_helmet_spriteSheet_21
+    21300044: Cat03_helmet_spriteSheet_22
+    21300046: Cat03_helmet_spriteSheet_23
+    21300048: Cat03_helmet_spriteSheet_24
+    21300050: Cat03_helmet_spriteSheet_25
+    21300052: Cat03_helmet_spriteSheet_26
+    21300054: Cat03_helmet_spriteSheet_27
+    21300056: Cat03_helmet_spriteSheet_28
+    21300058: Cat03_helmet_spriteSheet_29
+    21300060: Cat03_helmet_spriteSheet_30
+    21300062: Cat03_helmet_spriteSheet_31
+    21300064: Cat03_helmet_spriteSheet_32
+    21300066: Cat03_helmet_spriteSheet_33
+    21300068: Cat03_helmet_spriteSheet_34
+    21300070: Cat03_helmet_spriteSheet_35
+    21300072: Cat03_helmet_spriteSheet_36
+    21300074: Cat03_helmet_spriteSheet_37
+    21300076: Cat03_helmet_spriteSheet_38
+    21300078: Cat03_helmet_spriteSheet_39
+    21300080: Cat03_helmet_spriteSheet_40
+    21300082: Cat03_helmet_spriteSheet_41
+    21300084: Cat03_helmet_spriteSheet_42
+    21300086: Cat03_helmet_spriteSheet_43
+    21300088: Cat03_helmet_spriteSheet_44
+    21300090: Cat03_helmet_spriteSheet_45
+    21300092: Cat03_helmet_spriteSheet_46
+    21300094: Cat03_helmet_spriteSheet_47
+    21300096: Cat03_helmet_spriteSheet_48
+    21300098: Cat03_helmet_spriteSheet_49
+    21300100: Cat03_helmet_spriteSheet_50
+    21300102: Cat03_helmet_spriteSheet_51
+    21300104: Cat03_helmet_spriteSheet_52
+    21300106: Cat03_helmet_spriteSheet_53
+    21300108: Cat03_helmet_spriteSheet_54
+    21300110: Cat03_helmet_spriteSheet_55
+    21300112: Cat03_helmet_spriteSheet_56
+    21300114: Cat03_helmet_spriteSheet_57
+    21300116: Cat03_helmet_spriteSheet_58
+    21300118: Cat03_helmet_spriteSheet_59
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_0
+      name: Cat03_helmet_spriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -126,12 +126,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_1
+      name: Cat03_helmet_spriteSheet_1
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,12 +139,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_2
+      name: Cat03_helmet_spriteSheet_2
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,12 +152,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_3
+      name: Cat03_helmet_spriteSheet_3
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,12 +165,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_4
+      name: Cat03_helmet_spriteSheet_4
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2272
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,12 +178,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_5
+      name: Cat03_helmet_spriteSheet_5
       rect:
         serializedVersion: 2
-        x: 2730
+        x: 2840
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -191,12 +191,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_6
+      name: Cat03_helmet_spriteSheet_6
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3408
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,12 +204,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_7
+      name: Cat03_helmet_spriteSheet_7
       rect:
         serializedVersion: 2
-        x: 3822
+        x: 3976
         y: 5817
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -217,12 +217,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_8
+      name: Cat03_helmet_spriteSheet_8
       rect:
         serializedVersion: 2
         x: 0
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -230,12 +230,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_9
+      name: Cat03_helmet_spriteSheet_9
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -243,12 +243,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_10
+      name: Cat03_helmet_spriteSheet_10
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -256,12 +256,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_11
+      name: Cat03_helmet_spriteSheet_11
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,12 +269,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_12
+      name: Cat03_helmet_spriteSheet_12
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2272
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -282,12 +282,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_13
+      name: Cat03_helmet_spriteSheet_13
       rect:
         serializedVersion: 2
-        x: 2730
+        x: 2840
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -295,12 +295,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_14
+      name: Cat03_helmet_spriteSheet_14
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3408
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -308,12 +308,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_15
+      name: Cat03_helmet_spriteSheet_15
       rect:
         serializedVersion: 2
-        x: 3822
+        x: 3976
         y: 4986
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -321,12 +321,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_16
+      name: Cat03_helmet_spriteSheet_16
       rect:
         serializedVersion: 2
         x: 0
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -334,12 +334,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_17
+      name: Cat03_helmet_spriteSheet_17
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -347,12 +347,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_18
+      name: Cat03_helmet_spriteSheet_18
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -360,12 +360,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_19
+      name: Cat03_helmet_spriteSheet_19
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -373,12 +373,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_20
+      name: Cat03_helmet_spriteSheet_20
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2272
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -386,12 +386,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_21
+      name: Cat03_helmet_spriteSheet_21
       rect:
         serializedVersion: 2
-        x: 2730
+        x: 2840
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -399,12 +399,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_22
+      name: Cat03_helmet_spriteSheet_22
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3408
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -412,12 +412,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_23
+      name: Cat03_helmet_spriteSheet_23
       rect:
         serializedVersion: 2
-        x: 3822
+        x: 3976
         y: 4155
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -425,12 +425,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_24
+      name: Cat03_helmet_spriteSheet_24
       rect:
         serializedVersion: 2
         x: 0
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -438,12 +438,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_25
+      name: Cat03_helmet_spriteSheet_25
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -451,12 +451,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_26
+      name: Cat03_helmet_spriteSheet_26
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -464,12 +464,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_27
+      name: Cat03_helmet_spriteSheet_27
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -477,12 +477,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_28
+      name: Cat03_helmet_spriteSheet_28
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2272
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -490,12 +490,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_29
+      name: Cat03_helmet_spriteSheet_29
       rect:
         serializedVersion: 2
-        x: 2730
+        x: 2840
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -503,12 +503,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_30
+      name: Cat03_helmet_spriteSheet_30
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3408
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -516,12 +516,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_31
+      name: Cat03_helmet_spriteSheet_31
       rect:
         serializedVersion: 2
-        x: 3822
+        x: 3976
         y: 3324
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -529,12 +529,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_32
+      name: Cat03_helmet_spriteSheet_32
       rect:
         serializedVersion: 2
         x: 0
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -542,12 +542,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_33
+      name: Cat03_helmet_spriteSheet_33
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -555,12 +555,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_34
+      name: Cat03_helmet_spriteSheet_34
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -568,12 +568,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_35
+      name: Cat03_helmet_spriteSheet_35
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -581,12 +581,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_36
+      name: Cat03_helmet_spriteSheet_36
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2272
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -594,12 +594,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_37
+      name: Cat03_helmet_spriteSheet_37
       rect:
         serializedVersion: 2
-        x: 2730
+        x: 2840
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -607,12 +607,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_38
+      name: Cat03_helmet_spriteSheet_38
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3408
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -620,12 +620,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_39
+      name: Cat03_helmet_spriteSheet_39
       rect:
         serializedVersion: 2
-        x: 3822
+        x: 3976
         y: 2493
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -633,12 +633,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_40
+      name: Cat03_helmet_spriteSheet_40
       rect:
         serializedVersion: 2
         x: 0
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -646,12 +646,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_41
+      name: Cat03_helmet_spriteSheet_41
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -659,12 +659,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_42
+      name: Cat03_helmet_spriteSheet_42
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -672,12 +672,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_43
+      name: Cat03_helmet_spriteSheet_43
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -685,12 +685,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_44
+      name: Cat03_helmet_spriteSheet_44
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2272
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -698,12 +698,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_45
+      name: Cat03_helmet_spriteSheet_45
       rect:
         serializedVersion: 2
-        x: 2730
+        x: 2840
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -711,12 +711,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_46
+      name: Cat03_helmet_spriteSheet_46
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3408
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -724,12 +724,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_47
+      name: Cat03_helmet_spriteSheet_47
       rect:
         serializedVersion: 2
-        x: 3822
+        x: 3976
         y: 1662
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -737,12 +737,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_48
+      name: Cat03_helmet_spriteSheet_48
       rect:
         serializedVersion: 2
         x: 0
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -750,12 +750,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_49
+      name: Cat03_helmet_spriteSheet_49
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -763,12 +763,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_50
+      name: Cat03_helmet_spriteSheet_50
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -776,12 +776,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_51
+      name: Cat03_helmet_spriteSheet_51
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -789,12 +789,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_52
+      name: Cat03_helmet_spriteSheet_52
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2272
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -802,12 +802,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_53
+      name: Cat03_helmet_spriteSheet_53
       rect:
         serializedVersion: 2
-        x: 2730
+        x: 2840
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -815,12 +815,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_54
+      name: Cat03_helmet_spriteSheet_54
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3408
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -828,12 +828,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_55
+      name: Cat03_helmet_spriteSheet_55
       rect:
         serializedVersion: 2
-        x: 3822
+        x: 3976
         y: 831
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -841,12 +841,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_56
+      name: Cat03_helmet_spriteSheet_56
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -854,12 +854,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_57
+      name: Cat03_helmet_spriteSheet_57
       rect:
         serializedVersion: 2
-        x: 546
+        x: 568
         y: 0
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -867,12 +867,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_58
+      name: Cat03_helmet_spriteSheet_58
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1136
         y: 0
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -880,12 +880,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cat03_SpriteSheet_v1_59
+      name: Cat03_helmet_spriteSheet_59
       rect:
         serializedVersion: 2
-        x: 1638
+        x: 1704
         y: 0
-        width: 546
+        width: 568
         height: 831
       alignment: 0
       pivot: {x: 0, y: 0}

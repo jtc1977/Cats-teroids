@@ -25,6 +25,7 @@ public class PlayerSpawner : MonoBehaviour
 //		livesText.text = "LIVES: " + lives;
 		respawnTimerCounter = _respawnTimer;
 		GameController.GC.PlayerObject = ((GameObject)Instantiate (playerPrefab, transform.position, Quaternion.identity)).transform;
+		GameController.GC.PlayerObject.position = new Vector3 (GameController.GC.PlayerObject.position.x, -3.25f, 0f);
 	}
 
 	void Update ()

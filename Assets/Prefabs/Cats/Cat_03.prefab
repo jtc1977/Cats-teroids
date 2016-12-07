@@ -28,7 +28,7 @@ GameObject:
   - 114: {fileID: 114000011522937606}
   - 82: {fileID: 82000011975250762}
   - 95: {fileID: 95000012322061196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cat_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

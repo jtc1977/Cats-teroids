@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
 		}
 
 		if (_gameOver) {
-			if (Input.GetKeyDown (KeyCode.R)) {
+			if (Input.GetKeyDown (KeyCode.R) || Input.GetTouch(0).phase == TouchPhase.Ended) {
 				Application.LoadLevel (Application.loadedLevel);
 				Unpause ();
 
@@ -61,6 +61,10 @@ public class GameController : MonoBehaviour
 			UIController.UIC.InGame.SetActive (false);
 			UIController.UIC.MainMenu.SetActive (true);
 		}
+	}
+
+	public void SwitchBullet(){
+		PlayerObject.GetComponent<PlayerShooting> ().SwitchBullet ();
 	}
 
 	public void SetGameOver(bool isOver){

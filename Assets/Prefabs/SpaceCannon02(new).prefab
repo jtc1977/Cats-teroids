@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 3
-  _maxHelath: 3
+  _maxHealth: 3
   _healthImage: {fileID: 114000013267365864}
   _UICanvas: {fileID: 223000010418282860}
 --- !u!114 &114000011239297082

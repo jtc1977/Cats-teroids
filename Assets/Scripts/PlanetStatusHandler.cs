@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class PlanetStatusHandler : ObjectStatusHandler {
-	[SerializeField]int _maxHealth;
+	//[SerializeField]int _maxHealth;
 	[SerializeField]Image _healthUI;
 
 	void Start(){

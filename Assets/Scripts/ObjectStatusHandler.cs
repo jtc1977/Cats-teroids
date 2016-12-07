@@ -6,10 +6,16 @@ using System.Collections;
 /// </summary>
 public class ObjectStatusHandler : MonoBehaviour {
 	[SerializeField] protected int _health;
-	[SerializeField] protected int _maxHelath;
+	[SerializeField] protected int _maxHealth;
 
 	public int GetHealth(){
+
 		return _health;
+	}
+
+	public int GetMaxHealth(){
+
+		return _maxHealth;
 	}
 	public virtual void SetHealth(int newHealth){
 		_health = newHealth;

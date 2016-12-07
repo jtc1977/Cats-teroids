@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class BulletMovementHandler : MonoBehaviour
+public class HelmetMovementHandler : MonoBehaviour
 {
 	//Y speed(Upward)
 	public float speed = 3;
@@ -15,7 +15,7 @@ public class BulletMovementHandler : MonoBehaviour
 	void Start ()
 	{
 		// Initial Velocity
-		GetComponent<Rigidbody2D> ().velocity = Vector2.up * speed;
+		GetComponent<Rigidbody2D> ().velocity = transform.up * speed;
 		//gameObject.transform.Rotate (0, 0, 90);
 
 		minXVel = 1f;

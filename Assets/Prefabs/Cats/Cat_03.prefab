@@ -24,12 +24,27 @@ GameObject:
   - 61: {fileID: 61000013572136992}
   - 114: {fileID: 114000010110322530}
   - 114: {fileID: 114000013582281260}
-  - 114: {fileID: 114000013903984470}
   - 114: {fileID: 114000011522937606}
   - 82: {fileID: 82000011975250762}
   - 95: {fileID: 95000012322061196}
+  - 114: {fileID: 114000014181659720}
   m_Layer: 8
   m_Name: Cat_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000013667209020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013117474470}
+  m_Layer: 8
+  m_Name: helmetSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,12 +56,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013185310908}
-  m_LocalRotation: {x: 0, y: -0, z: 0.72537446, w: -0.6883545}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.1405907, y: -0.89353025, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 267}
-  m_Children: []
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000013117474470}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &4000013117474470
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013667209020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.2, y: 2.41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011485960574}
   m_RootOrder: 0
 --- !u!50 &50000010637571076
 Rigidbody2D:
@@ -207,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 5
---- !u!114 &114000013903984470
+--- !u!114 &114000014181659720
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -215,11 +244,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013185310908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70dff98196b9c0d41af1b2e216512b36, type: 3}
+  m_Script: {fileID: 11500000, guid: dff83bf531a500d438aa545cb833d666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 5
-  _maxHelath: 5
+  _maxHealth: 5
+  helmetSpawnPoint: {fileID: 4000013117474470}
+  _myAnim: {fileID: 0}
+  helmet: {fileID: 1000012652370294, guid: 78f28e2590af28640b9f9e53a6627d2e, type: 2}
 --- !u!212 &212000010072749848
 SpriteRenderer:
   m_ObjectHideFlags: 1

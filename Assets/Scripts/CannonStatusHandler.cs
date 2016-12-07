@@ -10,7 +10,7 @@ public class CannonStatusHandler : ObjectStatusHandler {
 	{
 		base.SetHealth (newHealth);
 
-		_healthImage.fillAmount = (float)_health / (float)_maxHelath;
+		_healthImage.fillAmount = (float)_health / (float)_maxHealth;
 	}
 
 	void Start(){

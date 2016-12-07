@@ -121,7 +121,7 @@ Transform:
   - {fileID: 1279661237}
   - {fileID: 1286244236}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &17988731
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ Prefab:
     - {fileID: 114000010110322530, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
     - {fileID: 114000013582281260, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
     - {fileID: 114000011522937606, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
-    - {fileID: 114000013903984470, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
+    - {fileID: 0}
     - {fileID: 82000011975250762, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
     - {fileID: 50000010637571076, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
     - {fileID: 61000013572136992, guid: d720b8d4ee7b0e54fb802ffdd37c32c6, type: 2}
@@ -551,7 +551,7 @@ Transform:
   - {fileID: 502246283}
   - {fileID: 1116673931}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &150422356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1291,7 @@ RectTransform:
   m_Children:
   - {fileID: 1285433555}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2664,7 +2664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
-  _maxHelath: 0
   _maxHealth: 100
   _healthUI: {fileID: 979664866}
 --- !u!1 &989782412
@@ -4180,7 +4179,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013194448852, guid: 5897b8df184f4dc488cc08ec7a2aa9fe, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1000012083509442, guid: 5897b8df184f4dc488cc08ec7a2aa9fe, type: 2}
       propertyPath: m_IsActive
@@ -5917,7 +5916,7 @@ RectTransform:
   - {fileID: 1088786269}
   - {fileID: 1555064195}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}

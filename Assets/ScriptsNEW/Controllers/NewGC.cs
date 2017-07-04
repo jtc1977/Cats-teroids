@@ -38,9 +38,9 @@ public class NewGC : MonoBehaviour
         {
             if (value)
                 gameOverMenu.SetActive(true);
+            else
+                gameOverMenu.SetActive(false);
             _gameOver = value;
-
-            gameOverMenu.SetActive(true);
         }
     }
 

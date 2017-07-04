@@ -10,7 +10,7 @@ public class LevelControl : MonoBehaviour
     /// </summary>
     public static LevelControl lc;
 
-    public uint currentLevel = 0;
+    public uint currentLevel = 1;
 
     private uint _nextMassWave;
     /// <summary>
@@ -35,9 +35,12 @@ public class LevelControl : MonoBehaviour
     /// <summary>
     /// The number of asteroids left to spawn.
     /// </summary>
-    public uint remainingAsteroids;
+    public int asteroidsToSpawn;
 
-    //[HideInInspector] private List<Asteroid Class> existingAsteroids;
+    /// <summary>
+    /// The number of asteroids that still exist in the scene.
+    /// </summary>
+    public int asteroidsExisting;
 
     /// <summary>
     /// A small amount of time that separates levels.
@@ -54,11 +57,6 @@ public class LevelControl : MonoBehaviour
 
     #region Functions
     // public void DestroyAsteroid(asteroid class)
-
-    public void DestroyAsteroid(uint a)
-    {
-
-    }
     #endregion
 
     #region MonoBehaviors

@@ -14,12 +14,6 @@ public class AsteroidStatus : MonoBehaviour
     /// </summary>
     public bool isLarge { get { return _isLarge; } }
 
-    [SerializeField] private int _score;
-    /// <summary>
-    /// The number of points this asteroid gives when destroyed.
-    /// </summary>
-    public int score { get { return _score; } }
-
     [SerializeField] private int _damage;
     /// <summary>
     /// The amount of damage the asteroid deals when colliding with the cannon or Earth.
@@ -39,17 +33,14 @@ public class AsteroidStatus : MonoBehaviour
             Instantiate(asc.explosionPrefabs[Random.Range(0, asc.explosionPrefabs.Length - 1)], transform.position, Quaternion.Euler(0, 0, Random.Range(0, 360)));
 
         // If hit by a cat, add score. Also split if it is large.
-        /*if (fromCat)
+        if (fromCat)
         {
-            gamecontroller score += score
+            //NewGC.gc
             if (isLarge)
             {
-                Split
+                //Split function
             }
         }
-
-        // If 
-        */
     }
     #endregion
 
